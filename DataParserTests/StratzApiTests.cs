@@ -1,14 +1,12 @@
 ﻿using System.Net.Http.Json;
-using DataParser.Models;
-using DataParser.Serializers;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
-namespace DataParser;
+namespace DataParserTests;
 
-public static class Program
+[TestFixture]
+public class StratzApiTests
 {
-    static async Task Main(string[] args)
+    [Test]
+    public Task GetCorrectResponse()
     {
         var client = new HttpClient();
         const string query = """
@@ -44,27 +42,10 @@ public static class Program
         {
             Content = JsonContent.Create(new { query })
         };
-        request.Headers.Add("Authorization", $"Bearer {Environment.GetEnvironmentVariable("StratzApiKey")}");
+        var apiKey = Environment.GetEnvironmentVariable("StratzApiKey");
+        request.Headers.Add("Authorization", $"Bearer {apiKey}");
 
-        var responce = await client.SendAsync(request);
-        var jsonString = await responce.Content.ReadAsStringAsync();
-        
-        var responseTokens = JObject.Parse(jsonString);
-        var heroesTokens = responseTokens["data"]["constants"]["heroes"].Children().ToList();
-        
-        var heroesList = new List<HeroEntity>();
-        foreach (var heroToken in heroesTokens)
-        {
-            var heroEntity = JsonConvert.DeserializeObject<HeroEntity>(heroToken.ToString(), new HeroConverter());
-            heroesList.Add(heroEntity);
-        }
-
-        using (var db = new ApplicationContext())
-        {
-            db.Heroes.AddRange(heroesList);
-            await db.SaveChangesAsync();
-        }
-        
-        Console.WriteLine("Done");
+        var responce = client.Send(request);
+        return VerifyJson(responce.Content.ReadAsStringAsync());
     }
 }

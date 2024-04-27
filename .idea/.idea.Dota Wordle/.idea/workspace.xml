@@ -12,16 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DataParser/Enums/Attribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParser/Enums/Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParser/Models/HeroEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParser/Models/RoleEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dota Wordle.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dota Wordle/Dota Wordle.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle/Dota Wordle.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dota Wordle/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dota Wordle/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataParser/ApplicationContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataParser/Models/PrimaryAttributeEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataParser/Models/RoleTypeEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataParserTests/StratzApiTests.GetCorrectResponse.verified.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataParserTests/StratzApiTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParser/DataParser.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/DataParser.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParser/Enums/Attribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Enums/PrimaryAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParser/Enums/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Enums/RoleType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParser/Models/HeroEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Models/HeroEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParser/Models/RoleEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Models/RoleEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParserTests/DataParserTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DataParserTests/DataParserTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParserTests/HeroConverterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParserTests/HeroConverterTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/327e3a92ae94d9dc98b3fe2b7ca1c80d784c39d6b851fb0259e784c3ae6928/Extensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4192c016ac87865a13f36155d8104b1ccc818c55593b451cc2168ac54b76f6f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4eae6449caa21e90c2ff2d63846343457a0e4192fb25892da80d78feb4774f/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Models/HeroEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Models/RoleEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Serializers/HeroConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParserTests/HeroConverterTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Worker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -59,7 +70,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Launch Settings Profile.Dota Wordle: https.executor": "Run",
-    ".NET Project.DataParser.executor": "Debug",
+    ".NET Project.DataParser.executor": "Run",
     "895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor": "Debug",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -69,7 +80,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "org.intellij.sdk.settings.AppSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -173,7 +184,17 @@
       <workItem from="1713687465089" duration="3252000" />
       <workItem from="1713702226014" duration="5623000" />
       <workItem from="1713717536831" duration="2645000" />
-      <workItem from="1713764892657" duration="5743000" />
+      <workItem from="1713764892657" duration="6697000" />
+      <workItem from="1713950386875" duration="1456000" />
+      <workItem from="1713951873819" duration="919000" />
+      <workItem from="1713952822638" duration="324000" />
+      <workItem from="1714068674718" duration="2242000" />
+      <workItem from="1714107799992" duration="2970000" />
+      <workItem from="1714113552861" duration="177000" />
+      <workItem from="1714144701688" duration="1264000" />
+      <workItem from="1714148189291" duration="1897000" />
+      <workItem from="1714150413891" duration="522000" />
+      <workItem from="1714198394004" duration="5834000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -183,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713687884318</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working heroes parser">
+      <option name="closed" value="true" />
+      <created>1713771357538</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713771357538</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,11 +220,22 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Working heroes parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -214,30 +254,17 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DataParser/Program.cs</url>
-          <line>56</line>
-          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParser\Program.cs" containingFunctionPresentation="Method 'Main'">
+          <url>file://$PROJECT_DIR$/DataParserTests/HeroConverterTests.cs</url>
+          <line>79</line>
+          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParserTests\HeroConverterTests.cs" containingFunctionPresentation="Method 'ShouldDeserializeCorrectJson'">
             <startOffsets>
-              <option value="2403" />
+              <option value="2356" />
             </startOffsets>
             <endOffsets>
-              <option value="2442" />
+              <option value="2440" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs</url>
-          <line>25</line>
-          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParser\Serializers\HeroConverter.cs" containingFunctionPresentation="Method 'ReadJson'">
-            <startOffsets>
-              <option value="799" />
-            </startOffsets>
-            <endOffsets>
-              <option value="800" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,7 +3,6 @@ using DataParser.Models;
 using DataParser.Serializers;
 using FluentAssertions;
 using Newtonsoft.Json;
-using Attribute = DataParser.Enums.Attribute;
 
 namespace DataParserTests;
 
@@ -51,18 +50,18 @@ public class HeroConverterTests
     }
 
     [Test]
-    public void ShouldDeserializeHeroEntity()
+    public void ShouldDeserializeCorrectJson()
     {
         var expectedHero = new HeroEntity
         {
-            HeroId = 1,
+            Id = 1,
             Name = "Anti-Mage",
             GameVersion = 172,
             Roles = new List<RoleEntity>()
             {
-                new() { RoleId = Role.Carry, Level = 3 },
-                new() { RoleId = Role.Escape, Level = 3 },
-                new() { RoleId = Role.Nuker, Level = 1 },
+                new() { HeroId = 1, RoleTypeId = RoleType.Carry, Level = 3 },
+                new() { HeroId = 1, RoleTypeId = RoleType.Escape, Level = 3 },
+                new() { HeroId = 1, RoleTypeId = RoleType.Nuker, Level = 1 },
             },
             AttackType = "Melee",
             StartingArmor = 5,
@@ -70,7 +69,7 @@ public class HeroConverterTests
             StartingDamageMax = 57,
             StartingMovespeed = 310,
             AttackRange = 150,
-            PrimaryAttribute = Attribute.Agility,
+            PrimaryAttributeId = PrimaryAttribute.Agility,
             StrengthBase = 19,
             AgilityBase = 24,
             IntelligenceBase = 12,

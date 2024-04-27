@@ -1,6 +1,6 @@
 ﻿namespace DataParser.Enums;
 
-public enum Attribute
+public enum PrimaryAttribute
 {
     Strength,
     Agility,

@@ -1,6 +1,6 @@
 ﻿namespace DataParser.Enums;
 
-public enum Role
+public enum RoleType
 {
     Carry,
     Escape,

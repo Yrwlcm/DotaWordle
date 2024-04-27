@@ -1,18 +1,18 @@
-﻿using DataParser.Models;
+﻿using DataParser.Enums;
+using DataParser.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Attribute = DataParser.Enums.Attribute;
 
 namespace DataParser.Serializers;
 
 public class HeroConverter : JsonConverter<HeroEntity>
 {
-    private readonly Dictionary<string, Attribute> attributesAbbreviations = new()
+    private readonly Dictionary<string, PrimaryAttribute> attributesAbbreviations = new()
     {
-        { "str", Attribute.Strength },
-        { "agi", Attribute.Agility },
-        { "int", Attribute.Intelligence },
-        { "all", Attribute.All },
+        { "str", PrimaryAttribute.Strength },
+        { "agi", PrimaryAttribute.Agility },
+        { "int", PrimaryAttribute.Intelligence },
+        { "all", PrimaryAttribute.All },
     };
 
     public override void WriteJson(JsonWriter writer, HeroEntity? value, JsonSerializer serializer)
@@ -26,9 +26,10 @@ public class HeroConverter : JsonConverter<HeroEntity>
     {
         var jobject = JObject.Load(reader);
         var heroStats = jobject.Value<JObject>("stats");
+        
         var heroEnitiy = new HeroEntity
         {
-            HeroId = jobject.Value<int>("id"),
+            Id = jobject.Value<int>("id"),
             Name = jobject.Value<string>("displayName"),
             GameVersion = jobject.Value<int>("gameVersionId"),
             Roles = jobject["roles"].ToObject<List<RoleEntity>>(serializer),
@@ -38,12 +39,15 @@ public class HeroConverter : JsonConverter<HeroEntity>
             StartingDamageMax = heroStats.Value<float>("startingDamageMax"),
             StartingMovespeed = heroStats.Value<float>("moveSpeed"),
             AttackRange = heroStats.Value<float>("attackRange"),
-            PrimaryAttribute = attributesAbbreviations[heroStats.Value<string>("primaryAttribute")],
+            PrimaryAttributeId = attributesAbbreviations[heroStats.Value<string>("primaryAttribute")],
             StrengthBase = heroStats.Value<float>("strengthBase"),
             AgilityBase = heroStats.Value<float>("agilityBase"),
             IntelligenceBase = heroStats.Value<float>("intelligenceBase"),
             Complexity = heroStats.Value<byte>("complexity")
         };
+
+        heroEnitiy.Roles = heroEnitiy.Roles.Select(role => role with { HeroId = heroEnitiy.Id }).ToList();
+        
         return heroEnitiy;
     }
 }
