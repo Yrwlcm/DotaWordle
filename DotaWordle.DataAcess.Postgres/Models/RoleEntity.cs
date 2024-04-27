@@ -1,7 +1,7 @@
-﻿using DataParser.Enums;
+﻿using DotaWordle.DataAcess.Postgres.Enums;
 using Newtonsoft.Json;
 
-namespace DataParser.Models;
+namespace DotaWordle.DataAcess.Postgres.Models;
 
 public record RoleEntity
 {

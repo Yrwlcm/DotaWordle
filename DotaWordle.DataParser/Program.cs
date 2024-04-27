@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Json;
-using DataParser.Models;
 using DataParser.Serializers;
+using DotaWordle.DataAcess.Postgres.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 

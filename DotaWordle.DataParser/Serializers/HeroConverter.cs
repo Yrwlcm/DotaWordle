@@ -1,5 +1,5 @@
-﻿using DataParser.Enums;
-using DataParser.Models;
+﻿using DotaWordle.DataAcess.Postgres.Enums;
+using DotaWordle.DataAcess.Postgres.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 

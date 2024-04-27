@@ -11,24 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DataParser/ApplicationContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParser/Models/PrimaryAttributeEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParser/Models/RoleTypeEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParserTests/StratzApiTests.GetCorrectResponse.verified.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataParserTests/StratzApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParser/DataParser.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/DataParser.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParser/Enums/Attribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Enums/PrimaryAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParser/Enums/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Enums/RoleType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParser/Models/HeroEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Models/HeroEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParser/Models/RoleEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Models/RoleEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParserTests/DataParserTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DataParserTests/DataParserTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataParserTests/HeroConverterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParserTests/HeroConverterTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" afterDir="false" />
-    </list>
+    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,11 +30,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/327e3a92ae94d9dc98b3fe2b7ca1c80d784c39d6b851fb0259e784c3ae6928/Extensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4192c016ac87865a13f36155d8104b1ccc818c55593b451cc2168ac54b76f6f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4eae6449caa21e90c2ff2d63846343457a0e4192fb25892da80d78feb4774f/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Models/HeroEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Models/RoleEntity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Serializers/HeroConverter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParserTests/HeroConverterTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Worker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -194,7 +173,7 @@
       <workItem from="1714144701688" duration="1264000" />
       <workItem from="1714148189291" duration="1897000" />
       <workItem from="1714150413891" duration="522000" />
-      <workItem from="1714198394004" duration="5834000" />
+      <workItem from="1714198394004" duration="7148000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -212,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713771357538</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Database creation with some tests">
+      <option name="closed" value="true" />
+      <created>1714209558744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714209558744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +223,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Working heroes parser" />
+    <MESSAGE value="Database creation with some tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database creation with some tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -265,6 +254,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs</url>
+          <line>48</line>
+          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParser\Serializers\HeroConverter.cs" containingFunctionPresentation="Method 'ReadJson'">
+            <startOffsets>
+              <option value="2025" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2123" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,6 @@
-using DataParser.Enums;
-using DataParser.Models;
 using DataParser.Serializers;
+using DotaWordle.DataAcess.Postgres.Enums;
+using DotaWordle.DataAcess.Postgres.Models;
 using FluentAssertions;
 using Newtonsoft.Json;
 

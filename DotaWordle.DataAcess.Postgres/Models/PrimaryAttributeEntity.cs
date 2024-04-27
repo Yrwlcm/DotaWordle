@@ -1,11 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using DataParser.Enums;
+﻿using DotaWordle.DataAcess.Postgres.Enums;
 
-namespace DataParser.Models;
+namespace DotaWordle.DataAcess.Postgres.Models;
 
 public class PrimaryAttributeEntity
 {
-    [Key]
     public PrimaryAttribute PrimaryAttributeId { get; set; }
     public string Name { get; set; }
 

@@ -7,6 +7,7 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
+        <RootNamespace>DataParserTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -28,12 +29,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DataParser\DataParser.csproj" />
+      <ProjectReference Include="..\DotaWordle.DataParser\DotaWordle.DataParser.csproj" />
+      <ProjectReference Include="..\DotaWordle.DataAcess.Postgres\DotaWordle.DataAcess.Postgres.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="StratzApiTests.GetCorrectResponse.verified.txt">
+      <None Update="DataParserTests\StratzApiTests.GetCorrectResponse.verified.txt">
         <DependentUpon>StratzApiTests.cs</DependentUpon>
+        <ParentFile>StratzApiTests</ParentFile>
       </None>
     </ItemGroup>
     

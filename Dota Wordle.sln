@@ -1,10 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dota Wordle", "Dota Wordle\Dota Wordle.csproj", "{46CDEC44-3AA2-4050-89E2-63BB874BB421}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaWordle", "DotaWordle\DotaWordle.csproj", "{46CDEC44-3AA2-4050-89E2-63BB874BB421}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataParser", "DataParser\DataParser.csproj", "{AF8FA0CD-7B39-4F28-8106-191D535372EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaWordle.DataParser", "DotaWordle.DataParser\DotaWordle.DataParser.csproj", "{AF8FA0CD-7B39-4F28-8106-191D535372EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataParserTests", "DataParserTests\DataParserTests.csproj", "{A088500A-CD7A-4CA1-93A2-A4290A12F275}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaWordle.Tests", "DotaWordle.Tests\DotaWordle.Tests.csproj", "{A088500A-CD7A-4CA1-93A2-A4290A12F275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaWordle.DataAcess.Postgres", "DotaWordle.DataAcess.Postgres\DotaWordle.DataAcess.Postgres.csproj", "{84E25FD5-8152-4E0C-BD11-E0BBB3D415B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +26,9 @@ Global
 		{A088500A-CD7A-4CA1-93A2-A4290A12F275}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A088500A-CD7A-4CA1-93A2-A4290A12F275}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A088500A-CD7A-4CA1-93A2-A4290A12F275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E25FD5-8152-4E0C-BD11-E0BBB3D415B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E25FD5-8152-4E0C-BD11-E0BBB3D415B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E25FD5-8152-4E0C-BD11-E0BBB3D415B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E25FD5-8152-4E0C-BD11-E0BBB3D415B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

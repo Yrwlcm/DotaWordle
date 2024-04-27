@@ -1,4 +1,4 @@
-﻿namespace DataParser.Enums;
+﻿namespace DotaWordle.DataAcess.Postgres.Enums;
 
 public enum RoleType
 {
