@@ -1,14 +1,30 @@
 ﻿using System.Net.Http.Json;
+using DataParser;
+using DotaWordle.DataAcess.Postgres.Enums;
+using FluentAssertions;
 
 namespace DataParserTests;
 
 [TestFixture]
 public class StratzApiTests
 {
-    [Test]
-    public Task GetCorrectResponse()
+    private HttpClient client;
+
+    [SetUp]
+    public void Setup()
     {
-        var client = new HttpClient();
+        client = new HttpClient();
+    }
+
+    [TearDown]
+    public void TearDown()
+    {
+        client.Dispose();
+    }
+
+    [Test]
+    public Task GetCorrectHeroesResponse()
+    {
         const string query = """
                              {
                                constants {
@@ -38,14 +54,40 @@ public class StratzApiTests
                              }
                              """;
 
-        using var request = new HttpRequestMessage(HttpMethod.Post, "https://api.stratz.com/graphql")
-        {
-            Content = JsonContent.Create(new { query })
-        };
-        var apiKey = Environment.GetEnvironmentVariable("StratzApiKey");
-        request.Headers.Add("Authorization", $"Bearer {apiKey}");
+        var responce = StratzApi.SendStratzGraphQLRequest(client, query).Result;
 
-        var responce = client.Send(request);
         return VerifyJson(responce.Content.ReadAsStringAsync());
+    }
+
+    [Test]
+    public Task GetCorrectHeroesWinrateResponse()
+    {
+        const string query = """
+                             {
+                               heroStats {
+                                 winWeek(bracketIds: [HERALD, LEGEND, IMMORTAL]) {
+                                   heroId
+                                   winCount
+                                   matchCount
+                                 }
+                               }
+                             }
+
+                             """;
+
+        var responce = StratzApi.SendStratzGraphQLRequest(client, query).Result;
+        return VerifyJson(responce.Content.ReadAsStringAsync());
+    }
+
+    [Test]
+    public void GetCorrectHeroesWinratesForRankBracket()
+    {
+        var selectedBrackets = new[] { RankBracket.Herald, RankBracket.Legend, RankBracket.Immortal };
+
+        var selectedBracketsMatches = StratzApi.ParseAllHeroesWeekWinrates(client, selectedBrackets).Result;
+        var allBracketsMatches = StratzApi.ParseAllHeroesWeekWinrates(client, [RankBracket.All]).Result;
+
+        selectedBracketsMatches.Should().HaveCount(3);
+        allBracketsMatches.Should().HaveCount(1);
     }
 }

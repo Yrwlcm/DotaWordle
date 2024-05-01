@@ -10,16 +10,18 @@ public class HeroConfiguration : IEntityTypeConfiguration<HeroEntity>
     {
         builder
             .HasKey(hero => hero.Id);
-        
+
         builder
             .HasMany(hero => hero.Roles)
-            .WithOne(role => role.Hero)
-            .HasForeignKey(role => role.HeroId);
+            .WithOne(role => role.Hero);
 
         builder
             .HasOne(hero => hero.PrimaryAttribute)
             .WithMany(attribute => attribute.Heroes)
             .HasForeignKey(role => role.PrimaryAttributeId);
 
+        builder
+            .HasMany(hero => hero.WeekWinrates)
+            .WithOne(winrate => winrate.Hero);
     }
 }

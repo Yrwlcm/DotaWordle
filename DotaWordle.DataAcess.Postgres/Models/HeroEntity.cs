@@ -20,5 +20,7 @@ public record HeroEntity
     public float AgilityBase { get; set; }
     public float IntelligenceBase { get; set; }
     public byte Complexity { get; set; }
+    public List<HeroWeekWinrateEntity>? WeekWinrates { get; set; }
+    
 }
 

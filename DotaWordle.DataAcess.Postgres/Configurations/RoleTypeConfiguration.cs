@@ -9,10 +9,6 @@ public class RoleTypeConfiguration : IEntityTypeConfiguration<RoleTypeEntity>
 {
     public void Configure(EntityTypeBuilder<RoleTypeEntity> builder)
     {
-        // builder
-        //     .Property(e => e.RoleTypeId)
-        //     .HasConversion<int>();
-        
         builder.HasKey(roleType => roleType.RoleTypeId);
 
         builder.HasMany(roleType => roleType.Roles)

@@ -5,7 +5,6 @@ namespace DotaWordle.DataAcess.Postgres.Models;
 
 public record RoleEntity
 {
-    public int Id { get; set; } = new();
     public int HeroId { get; set; }
     public HeroEntity? Hero { get; set; }
     [JsonProperty("RoleId")]

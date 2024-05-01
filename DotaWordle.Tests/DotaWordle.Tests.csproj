@@ -34,9 +34,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="DataParserTests\StratzApiTests.GetCorrectResponse.verified.txt">
+      <None Update="DataParserTests\StratzApiTests.GetCorrectHeroesResponse.received.txt">
         <DependentUpon>StratzApiTests.cs</DependentUpon>
-        <ParentFile>StratzApiTests</ParentFile>
+      </None>
+      <None Update="DataParserTests\StratzApiTests.GetCorrectHeroesWinrateResponse.received.txt">
+        <DependentUpon>StratzApiTests.cs</DependentUpon>
       </None>
     </ItemGroup>
     

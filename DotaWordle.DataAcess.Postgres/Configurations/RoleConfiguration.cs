@@ -8,7 +8,7 @@ public class RoleConfiguration : IEntityTypeConfiguration<RoleEntity>
 {
     public void Configure(EntityTypeBuilder<RoleEntity> builder)
     {
-        builder.HasKey(role => role.Id);
+        builder.HasKey(role => new { role.HeroId, role.RoleTypeId });
 
         builder.HasOne(role => role.Hero)
             .WithMany(hero => hero.Roles);

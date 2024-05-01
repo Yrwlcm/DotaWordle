@@ -11,7 +11,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="" />
+    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroWeekWinrateConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/RankBracketConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Enums/RankBracket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240427155613_initialCreate.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240427155613_initialCreate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501123751_AddedWinrates.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501123751_AddedWinrates.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroWeekWinrateEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/RankBracketEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataParser/Serializers/HeroWinrateConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataParser/StratzApi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroWinrateConverterTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.GetCorrectHeroesResponse.verified.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.GetCorrectHeroesWinrateResponse.verified.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/ApplicationContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/DotaWordle.DataAcess.Postgres.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/DotaWordle.DataAcess.Postgres.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.GetCorrectResponse.verified.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,13 +51,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Linq/src/System/Linq/Select.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29ea32a76b2a6b8eb246f247df6a6a86d887384b4c31db2a35effccdd86c24/JsonSerializerInternalReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/327e3a92ae94d9dc98b3fe2b7ca1c80d784c39d6b851fb0259e784c3ae6928/Extensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4192c016ac87865a13f36155d8104b1ccc818c55593b451cc2168ac54b76f6f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4eae6449caa21e90c2ff2d63846343457a0e4192fb25892da80d78feb4774f/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DataParser/Models/RoleEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroConverterTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/obj/Debug/net8.0/Verify.Attributes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Worker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -46,30 +77,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Dota Wordle: https.executor": "Run",
-    ".NET Project.DataParser.executor": "Run",
-    "895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.intellij.sdk.settings.AppSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Dota Wordle: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.DataParser.executor&quot;: &quot;Debug&quot;,
+    &quot;895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\user\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\user\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.DataParser">
     <configuration name="DataParser" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -79,7 +110,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/DataParser/DataParser.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/DotaWordle.DataParser/DotaWordle.DataParser.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -90,7 +121,7 @@
       </method>
     </configuration>
     <configuration name="Dota Wordle: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Dota Wordle/Dota Wordle.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -105,7 +136,7 @@
       </method>
     </configuration>
     <configuration name="Dota Wordle: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Dota Wordle/Dota Wordle.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -120,7 +151,7 @@
       </method>
     </configuration>
     <configuration name="Dota Wordle: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Dota Wordle/Dota Wordle.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -174,6 +205,10 @@
       <workItem from="1714148189291" duration="1897000" />
       <workItem from="1714150413891" duration="522000" />
       <workItem from="1714198394004" duration="7148000" />
+      <workItem from="1714222795677" duration="8211000" />
+      <workItem from="1714488313523" duration="7281000" />
+      <workItem from="1714543976480" duration="5771000" />
+      <workItem from="1714562708393" duration="6395000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -199,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714209558744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring">
+      <option name="closed" value="true" />
+      <created>1714224476527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714224476527</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,49 +267,43 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Working heroes parser" />
     <MESSAGE value="Database creation with some tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database creation with some tests" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DataParser/Program.cs</url>
-          <line>51</line>
-          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParser\Program.cs" containingFunctionPresentation="Method 'Main'">
-            <startOffsets>
-              <option value="2079" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2126" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DataParserTests/HeroConverterTests.cs</url>
+          <url>file://$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroConverterTests.cs</url>
           <line>79</line>
-          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParserTests\HeroConverterTests.cs" containingFunctionPresentation="Method 'ShouldDeserializeCorrectJson'">
-            <startOffsets>
-              <option value="2356" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2440" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParserTests\HeroConverterTests.cs" containingFunctionPresentation="Method 'ShouldDeserializeCorrectJson'" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DataParser/Serializers/HeroConverter.cs</url>
-          <line>48</line>
-          <properties documentPath="G:\Dota Wordle\Dota Wordle\DataParser\Serializers\HeroConverter.cs" containingFunctionPresentation="Method 'ReadJson'">
+          <url>file://$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.cs</url>
+          <line>87</line>
+          <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle.Tests\DataParserTests\StratzApiTests.cs" containingFunctionPresentation="Method 'GetCorrectHeroesWinratesForRankBracket'">
             <startOffsets>
-              <option value="2025" />
+              <option value="2793" />
             </startOffsets>
             <endOffsets>
-              <option value="2123" />
+              <option value="2889" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs</url>
+          <line>26</line>
+          <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle.DataParser\Program.cs" containingFunctionPresentation="Method 'Main'">
+            <startOffsets>
+              <option value="1004" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1045" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
