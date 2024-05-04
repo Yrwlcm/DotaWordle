@@ -1,11 +1,4 @@
-﻿using System.Net.Http.Json;
-using DataParser.Serializers;
-using DotaWordle.DataAcess.Postgres.Enums;
-using DotaWordle.DataAcess.Postgres.Models;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-
+﻿using DotaWordle.DataAcess.Postgres.Enums;
 namespace DataParser;
 
 public static class Program
@@ -22,6 +15,7 @@ public static class Program
 
         using (var db = new ApplicationContext())
         {
+            //TODO: separate heroes and winrates parsing
             db.Heroes.UpdateRange(heroesList);
             db.HeroWeekWinrates.UpdateRange(flatWinrates);
             await db.SaveChangesAsync();

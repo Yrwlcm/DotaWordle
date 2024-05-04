@@ -12,32 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroWeekWinrateConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/RankBracketConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Enums/RankBracket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240427155613_initialCreate.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240427155613_initialCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501123751_AddedWinrates.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501123751_AddedWinrates.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroWeekWinrateEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/RankBracketEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataParser/Serializers/HeroWinrateConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.DataParser/StratzApi.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroWinrateConverterTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.GetCorrectHeroesResponse.verified.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.GetCorrectHeroesWinrateResponse.verified.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/_ViewStart.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/ApplicationContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/DotaWordle.DataAcess.Postgres.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/DotaWordle.DataAcess.Postgres.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.GetCorrectResponse.verified.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +64,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.Dota Wordle: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.DataParser.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.DataParser.executor&quot;: &quot;Run&quot;,
     &quot;895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor&quot;: &quot;Debug&quot;,
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -101,7 +85,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.DataParser">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Dota Wordle: https">
     <configuration name="DataParser" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -208,7 +192,14 @@
       <workItem from="1714222795677" duration="8211000" />
       <workItem from="1714488313523" duration="7281000" />
       <workItem from="1714543976480" duration="5771000" />
-      <workItem from="1714562708393" duration="6395000" />
+      <workItem from="1714562708393" duration="6915000" />
+      <workItem from="1714569852197" duration="42000" />
+      <workItem from="1714656559201" duration="2809000" />
+      <workItem from="1714719860637" duration="962000" />
+      <workItem from="1714734058432" duration="767000" />
+      <workItem from="1714748677883" duration="1346000" />
+      <workItem from="1714760758388" duration="1926000" />
+      <workItem from="1714805775790" duration="5586000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -242,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714224476527</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Working parser for winrates">
+      <option name="closed" value="true" />
+      <created>1714569644088</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714569644088</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Working parser for winrates">
+      <option name="closed" value="true" />
+      <created>1714569676401</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714569676401</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +275,8 @@
     <MESSAGE value="Working heroes parser" />
     <MESSAGE value="Database creation with some tests" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Working parser for winrates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working parser for winrates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -294,13 +302,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs</url>
-          <line>26</line>
+          <line>15</line>
           <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle.DataParser\Program.cs" containingFunctionPresentation="Method 'Main'">
             <startOffsets>
-              <option value="1004" />
+              <option value="483" />
             </startOffsets>
             <endOffsets>
-              <option value="1045" />
+              <option value="524" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
