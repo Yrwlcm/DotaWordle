@@ -2,9 +2,9 @@
 using DotaWordle.DataAcess.Postgres.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataParser;
+namespace DotaWordle.DataAcess.Postgres;
 
-public sealed class ApplicationContext : DbContext
+public sealed class HeroesDbContext : DbContext
 {
     public DbSet<HeroEntity> Heroes { get; set; } = null!;
     public DbSet<RoleEntity> Roles { get; set; } = null!;
@@ -15,6 +15,7 @@ public sealed class ApplicationContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
+        //TODO: Change to user secrets when DataParser will be remade into service
         optionsBuilder.UseNpgsql($"Host=localhost;Port=5432;Database=DotaWordleDb;Username=postgres;" +
                                  $"Password={Environment.GetEnvironmentVariable("PostgreSqlPassword")};" +
                                  $"Include Error Detail=true;");

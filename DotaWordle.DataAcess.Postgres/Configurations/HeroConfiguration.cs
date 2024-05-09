@@ -13,7 +13,8 @@ public class HeroConfiguration : IEntityTypeConfiguration<HeroEntity>
 
         builder
             .HasMany(hero => hero.Roles)
-            .WithOne(role => role.Hero);
+            .WithOne(role => role.Hero)
+            .HasForeignKey(role => role.HeroId);;
 
         builder
             .HasOne(hero => hero.PrimaryAttribute)

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Dota_Wordle.Pages;
+namespace DotaWordle.Pages;
 
 public class Guess : PageModel
 {

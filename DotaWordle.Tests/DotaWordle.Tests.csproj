@@ -11,7 +11,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
         <PackageReference Include="DiffEngine" Version="15.3.0" />
         <PackageReference Include="FluentAssertions" Version="7.0.0-alpha.3" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
@@ -31,6 +31,7 @@
     <ItemGroup>
       <ProjectReference Include="..\DotaWordle.DataParser\DotaWordle.DataParser.csproj" />
       <ProjectReference Include="..\DotaWordle.DataAcess.Postgres\DotaWordle.DataAcess.Postgres.csproj" />
+      <ProjectReference Include="..\DotaWordle\DotaWordle.csproj" />
     </ItemGroup>
 
     <ItemGroup>

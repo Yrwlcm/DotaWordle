@@ -7,5 +7,5 @@ public class RoleTypeEntity
     public RoleType RoleTypeId { get; set; }
     public string Name { get; set; }
     
-    public List<RoleEntity> Roles { get; set; } = new();
+    public List<RoleEntity>? Roles { get; set; } = new();
 }

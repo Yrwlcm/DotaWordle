@@ -7,5 +7,5 @@ public class PrimaryAttributeEntity
     public PrimaryAttribute PrimaryAttributeId { get; set; }
     public string Name { get; set; }
 
-    public List<HeroEntity> Heroes { get; set; } = new();
+    public List<HeroEntity>? Heroes { get; set; } = new();
 }

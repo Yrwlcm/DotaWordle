@@ -7,5 +7,5 @@ public class RankBracketEntity
     public RankBracket RankBracketId { get; set; }
     public string Name { get; set; }
 
-    public List<HeroWeekWinrateEntity> WeekWinrates { get; set; } = [];
+    public List<HeroWeekWinrateEntity>? WeekWinrates { get; set; } = [];
 }

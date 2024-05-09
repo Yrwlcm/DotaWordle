@@ -1,10 +1,12 @@
-﻿using DotaWordle.DataAcess.Postgres.Enums;
+﻿using DotaWordle.DataAcess.Postgres;
+using DotaWordle.DataAcess.Postgres.Enums;
 namespace DataParser;
 
 public static class Program
 {
     static async Task Main(string[] args)
     {
+        //TODO: Rewrite to asp net service
         var client = new HttpClient();
 
         var heroesList = await StratzApi.ParseAllHeroes(client);
@@ -13,7 +15,7 @@ public static class Program
         
         var flatWinrates = winrates.SelectMany(x => x).ToList();
 
-        using (var db = new ApplicationContext())
+        using (var db = new HeroesDbContext())
         {
             //TODO: separate heroes and winrates parsing
             db.Heroes.UpdateRange(heroesList);

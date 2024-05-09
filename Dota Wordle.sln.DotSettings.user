@@ -9,6 +9,7 @@
       &lt;TestId&gt;NUnit3x::A088500A-CD7A-4CA1-93A2-A4290A12F275::net8.0::DataParserTests.HeroConverterTests&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::A088500A-CD7A-4CA1-93A2-A4290A12F275::net8.0::DataParserTests.StratzApiTests&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::A088500A-CD7A-4CA1-93A2-A4290A12F275::net8.0::DataParserTests.HeroWinrateConverterTests.ShouldDeserializeCorrectJson&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A088500A-CD7A-4CA1-93A2-A4290A12F275::net8.0::DotaWordleTests.MappingProfiles.MappingProfilesTests&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFile&gt;A088500A-CD7A-4CA1-93A2-A4290A12F275/f:StratzApiTest.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;

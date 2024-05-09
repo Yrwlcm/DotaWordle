@@ -12,16 +12,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240504144852_All nav properties to optional relations and explicitly set foreign key for roles.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240504144852_All nav properties to optional relations and explicitly set foreign key for roles.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordleTests/MappingProfilesTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Controllers/HeroesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/MappingProfiles/HeroProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/MappingProfiles/RoleProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/MappingProfiles/WinrateProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Models/Hero.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Models/HeroWinrate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Models/Role.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/HeroesDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240427155613_initialCreate.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240427155613_initialCreate.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501123751_AddedWinrates.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501123751_AddedWinrates.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501131046_RemovedRoleAndWinrateToHeroForeignKeyConstraint.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501131046_RemovedRoleAndWinrateToHeroForeignKeyConstraint.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501131645_CompositeKeyForRole.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/20240501131645_CompositeKeyForRole.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroWeekWinrateEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroWeekWinrateEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/PrimaryAttributeEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/PrimaryAttributeEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/RankBracketEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/RankBracketEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/RoleTypeEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/RoleTypeEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Controllers/WeatherForecastController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/DotaWordle.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/WeatherForecast.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +62,13 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8abdcbb5fcc64df6970a7bc170085c0b1de908/ad/40154c8d/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29ea32a76b2a6b8eb246f247df6a6a86d887384b4c31db2a35effccdd86c24/JsonSerializerInternalReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/327e3a92ae94d9dc98b3fe2b7ca1c80d784c39d6b851fb0259e784c3ae6928/Extensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4192c016ac87865a13f36155d8104b1ccc818c55593b451cc2168ac54b76f6f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4eae6449caa21e90c2ff2d63846343457a0e4192fb25892da80d78feb4774f/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroWeekWinrateConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroWeekWinrateEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroConverterTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/obj/Debug/net8.0/Verify.Attributes.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +94,7 @@
     &quot;895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor&quot;: &quot;Debug&quot;,
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.50059736&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -199,7 +226,11 @@
       <workItem from="1714734058432" duration="767000" />
       <workItem from="1714748677883" duration="1346000" />
       <workItem from="1714760758388" duration="1926000" />
-      <workItem from="1714805775790" duration="5586000" />
+      <workItem from="1714805775790" duration="8854000" />
+      <workItem from="1714833746536" duration="3910000" />
+      <workItem from="1715009304838" duration="3591000" />
+      <workItem from="1715162644954" duration="843000" />
+      <workItem from="1715244308313" duration="455000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -249,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714569676401</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Starting page">
+      <option name="closed" value="true" />
+      <created>1714818484158</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714818484158</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +315,8 @@
     <MESSAGE value="Database creation with some tests" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Working parser for winrates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working parser for winrates" />
+    <MESSAGE value="Starting page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -302,18 +342,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs</url>
-          <line>15</line>
+          <line>17</line>
           <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle.DataParser\Program.cs" containingFunctionPresentation="Method 'Main'">
             <startOffsets>
-              <option value="483" />
+              <option value="563" />
             </startOffsets>
             <endOffsets>
-              <option value="524" />
+              <option value="601" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DotaWordle.Tests/DotaWordleTests/MappingProfilesTests.cs</url>
+          <line>94</line>
+          <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle.Tests\DotaWordleTests\MappingProfilesTests.cs" containingFunctionPresentation="Method 'HeroProfileShouldMapCorrectly'">
+            <startOffsets>
+              <option value="3213" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3280" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#DotaWordle.DataAcess.Postgres.Models.HeroEntity" memberName="Roles" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
