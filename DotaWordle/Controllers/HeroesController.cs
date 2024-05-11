@@ -1,6 +1,6 @@
 using AutoMapper;
+using Dota_Wordle.Logic;
 using DotaWordle.DataAcess.Postgres;
-using DotaWordle.DataAcess.Postgres.Models;
 using DotaWordle.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,40 +11,57 @@ namespace DotaWordle.Controllers;
 [ApiController]
 public class HeroesController(HeroesDbContext context, IMapper mapper) : ControllerBase
 {
-    // GET: api/<HeroesController>
     [HttpGet]
-    public IEnumerable<Hero> Get()
+    public ActionResult<IEnumerable<Hero>> Get()
     {
         var heroes = context.Heroes
+            .AsNoTracking()
             .Include(hero => hero.Roles)
             .Include(hero => hero.WeekWinrates)
             .Select(heroEntity => mapper.Map<Hero>(heroEntity))
             .ToList();
-        return heroes;
+
+        return Ok(heroes);
     }
 
-    // GET api/<HeroesController>/5
-    [HttpGet("{id}")]
-    public string Get(int id)
+    [HttpGet("{id:int}")]
+    public ActionResult<Hero> Get(int id)
     {
-        return "value";
+        var hero = context.Heroes
+            .AsNoTracking()
+            .Where(hero => hero.Id == id)
+            .Include(hero => hero.Roles)
+            .Include(hero => hero.WeekWinrates)
+            .FirstOrDefault();
+
+        if (hero == null)
+            return NotFound(new { message = "Hero not found" });
+
+        return Ok(mapper.Map<Hero>(hero));
     }
 
-    // POST api/<HeroesController>
-    [HttpPost]
-    public void Post([FromBody] string value)
+    [HttpGet("compare/{heroId:int}/{comparedHeroId:int}")]
+    public ActionResult<HeroComparison> CompareHeroes(int heroId, int comparedHeroId)
     {
-    }
+        var heroes = context.Heroes
+            .AsNoTracking()
+            .Where(hero => hero.Id == heroId || hero.Id == comparedHeroId)
+            .Include(hero => hero.Roles)
+            .Include(hero => hero.WeekWinrates);
 
-    // PUT api/<HeroesController>/5
-    [HttpPut("{id}")]
-    public void Put(int id, [FromBody] string value)
-    {
-    }
+        var firstHeroEntity = heroes.FirstOrDefault(hero => hero.Id == heroId);
+        var secondHeroEntity = heroes.FirstOrDefault(hero => hero.Id == comparedHeroId);
 
-    // DELETE api/<HeroesController>/5
-    [HttpDelete("{id}")]
-    public void Delete(int id)
-    {
+        if (firstHeroEntity == null)
+            return NotFound(new { message = "First hero not found" });
+        if (secondHeroEntity == null)
+            return NotFound(new { message = "Second hero not found" });
+
+        var firstHero = mapper.Map<Hero>(firstHeroEntity);
+        var secondHero = mapper.Map<Hero>(secondHeroEntity);
+
+        var heroComparer = new HeroParametersComparer();
+
+        return Ok(heroComparer.CompareHeroes(firstHero, secondHero));
     }
 }

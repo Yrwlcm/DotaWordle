@@ -47,6 +47,13 @@ public class HeroConverter : JsonConverter<HeroEntity>
         };
 
         heroEnitiy.Roles = heroEnitiy.Roles.Select(role => role with { HeroId = heroEnitiy.Id }).ToList();
+
+        if (heroEnitiy.PrimaryAttributeId == PrimaryAttribute.All)
+        {
+            var allAttributesSum = heroEnitiy.StrengthBase + heroEnitiy.AgilityBase + heroEnitiy.IntelligenceBase;
+            heroEnitiy.StartingDamageMin = float.Round(heroEnitiy.StartingDamageMin + allAttributesSum * 0.7f );
+            heroEnitiy.StartingDamageMax = float.Round(heroEnitiy.StartingDamageMax + allAttributesSum * 0.7f );
+        }
         
         return heroEnitiy;
     }

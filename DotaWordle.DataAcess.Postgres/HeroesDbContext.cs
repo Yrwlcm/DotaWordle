@@ -15,7 +15,7 @@ public sealed class HeroesDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        //TODO: Change to user secrets when DataParser will be remade into service
+        //TODO: После того как парсер будет сервисом, заменить на user secrets
         optionsBuilder.UseNpgsql($"Host=localhost;Port=5432;Database=DotaWordleDb;Username=postgres;" +
                                  $"Password={Environment.GetEnvironmentVariable("PostgreSqlPassword")};" +
                                  $"Include Error Detail=true;");

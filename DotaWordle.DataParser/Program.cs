@@ -6,7 +6,7 @@ public static class Program
 {
     static async Task Main(string[] args)
     {
-        //TODO: Rewrite to asp net service
+        //TODO: Переписать на сервис
         var client = new HttpClient();
 
         var heroesList = await StratzApi.ParseAllHeroes(client);
@@ -17,7 +17,7 @@ public static class Program
 
         using (var db = new HeroesDbContext())
         {
-            //TODO: separate heroes and winrates parsing
+            //TODO: Разделить логику парсинга героев и винрейтов
             db.Heroes.UpdateRange(heroesList);
             db.HeroWeekWinrates.UpdateRange(flatWinrates);
             await db.SaveChangesAsync();
