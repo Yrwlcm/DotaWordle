@@ -1,4 +1,78 @@
 ﻿@page
 @model DotaWordle.Pages.Guess
 
-<div>Nothing to see here</div>
+<div>@Model.HiddenHeroNumber</div>
+
+<div class="card card-custom" style="height: 18rem;">
+    <div class="row g-0 mx-5 flex-row align-items-center justify-content-center">
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+            <img src="path_to_hero_image.jpg" class="img-fluid rounded-start" alt="Hero Image">
+        </div>
+        <div class="col-md-1 d-flex align-items-center justify-content-center">
+            <img src="path_to_attribute_image.jpg" class="img-fluid rounded-start" alt="Attribute image">
+        </div>
+        <div class="col-md-5">
+            <h5 class="card-title">@Model.Hero.Name</h5>
+        </div>
+    </div>
+    <div class="row g-0">
+        <div class="card-body col-md-8">
+            <p class="text-center">
+                <strong>Stats:</strong>
+            </p>
+            <div class="d-flex justify-content-center flex-wrap">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p>Attack type: @Model.Hero.AttackType</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Attack range: @Model.Hero.AttackRange</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Attack damage: @Model.Hero.StartingDamageMin - @Model.Hero.StartingDamageMax</p>
+                    </li>
+                </ul>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p>Armor: @Math.Round(Model.Hero.StartingArmor, 1)</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Move speed: @Model.Hero.StartingMovespeed</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Complexity: @Model.Hero.Complexity</p>
+                    </li>
+                </ul>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p>Strength: @Model.Hero.StrengthBase</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Agility: @Model.Hero.AgilityBase</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Intelligence: @Model.Hero.IntelligenceBase</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-body col-md-4">
+            <p class="card-text">
+                <p class="text-center">
+                    <strong>Winrates:</strong>
+                </p>
+                <ul>
+                    <li>
+                        <p>Herald: @Model.Hero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Herald").Winrate%</p>
+                    </li>
+                    <li>
+                        <p>Legend: @Model.Hero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Legend").Winrate%</p>
+                    </li>
+                    <li>
+                        <p>Immortal: @Model.Hero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Immortal").Winrate%</p>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>

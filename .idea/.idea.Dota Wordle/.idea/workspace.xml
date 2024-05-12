@@ -12,19 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordleTests/HeroParametersComparerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Logic/HeroParametersComparer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Models/HeroComparison.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Models/HeroWinrateComparision.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotaWordle/Models/RoleComparision.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Pages/_ViewImports.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Dota Wordle.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/HeroesDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/HeroesDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/StratzApiTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle/Controllers/HeroesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Controllers/HeroesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/Models/HeroWinrate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Models/HeroWinrate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/Models/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Models/Role.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +34,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Http/Http/src/DefaultHttpContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Mvc/Mvc.RazorPages/src/Infrastructure/ExecutorFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray_1.Minimal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Linq/src/System/Linq/Select.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -49,7 +51,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4192c016ac87865a13f36155d8104b1ccc818c55593b451cc2168ac54b76f6f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4eae6449caa21e90c2ff2d63846343457a0e4192fb25892da80d78feb4774f/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroWeekWinrateConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle.DataAcess.Postgres/HeroesDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroWeekWinrateEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroConverterTests.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,31 +71,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Dota Wordle: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.DataParser.executor&quot;: &quot;Run&quot;,
-    &quot;895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor&quot;: &quot;Debug&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.50059736&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Dota Wordle: https.executor": "Debug",
+    ".NET Project.DataParser.executor": "Run",
+    "895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.50059736",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\user\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\user\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Dota Wordle: https">
     <configuration name="DataParser" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -219,7 +220,10 @@
       <workItem from="1715337089275" duration="2936000" />
       <workItem from="1715357244342" duration="3781000" />
       <workItem from="1715409754541" duration="7089000" />
-      <workItem from="1715419726396" duration="699000" />
+      <workItem from="1715419726396" duration="1903000" />
+      <workItem from="1715426402869" duration="6909000" />
+      <workItem from="1715512162429" duration="5030000" />
+      <workItem from="1715526899824" duration="5540000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -309,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715245529865</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Working hero comparer">
+      <option name="closed" value="true" />
+      <created>1715421661765</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715421661765</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +351,8 @@
     <MESSAGE value="Starting page" />
     <MESSAGE value="First working api method" />
     <MESSAGE value="First working api method (get all heroes)" />
-    <option name="LAST_COMMIT_MESSAGE" value="First working api method (get all heroes)" />
+    <MESSAGE value="Working hero comparer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working hero comparer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -388,6 +401,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs</url>
+          <line>24</line>
+          <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle\Pages\Guess.cshtml.cs" containingFunctionPresentation="Method 'OnGet'">
+            <startOffsets>
+              <option value="674" />
+            </startOffsets>
+            <endOffsets>
+              <option value="833" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

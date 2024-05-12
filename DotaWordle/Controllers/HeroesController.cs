@@ -9,7 +9,7 @@ namespace DotaWordle.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class HeroesController(HeroesDbContext context, IMapper mapper) : ControllerBase
+public class HeroesController(HeroesDbContext context, IMapperBase mapper) : ControllerBase
 {
     [HttpGet]
     public ActionResult<IEnumerable<Hero>> Get()
@@ -18,8 +18,7 @@ public class HeroesController(HeroesDbContext context, IMapper mapper) : Control
             .AsNoTracking()
             .Include(hero => hero.Roles)
             .Include(hero => hero.WeekWinrates)
-            .Select(heroEntity => mapper.Map<Hero>(heroEntity))
-            .ToList();
+            .Select(heroEntity => mapper.Map<Hero>(heroEntity));
 
         return Ok(heroes);
     }
