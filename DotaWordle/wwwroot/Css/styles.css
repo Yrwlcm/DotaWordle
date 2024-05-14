@@ -1,0 +1,18 @@
+﻿.my-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    margin: 20px;
+    padding: 10px;
+}
+
+@media (min-width: 800px) {
+    .my-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    .my-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

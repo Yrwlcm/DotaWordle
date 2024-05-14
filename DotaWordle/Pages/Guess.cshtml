@@ -1,62 +1,58 @@
 ﻿@page
 @model DotaWordle.Pages.Guess
 
-<div>@Model.HiddenHeroNumber</div>
-
-<div class="card card-custom" style="height: 18rem;">
-    <div class="row g-0 mx-5 flex-row align-items-center justify-content-center">
+<div class="card card-custom hero-card">
+    <div class="row g-0 mx-5 flex-row align-items-center justify-content-center border border-3 border-danger">
         <div class="col-md-3 d-flex align-items-center justify-content-center">
-            <img src="path_to_hero_image.jpg" class="img-fluid rounded-start" alt="Hero Image">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(Model.Hero.Name.Replace(" ", "_").ToLower()).png"
+                 class="img-fluid rounded-start" alt="Hero Image">
         </div>
         <div class="col-md-1 d-flex align-items-center justify-content-center">
-            <img src="path_to_attribute_image.jpg" class="img-fluid rounded-start" alt="Attribute image">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_@(Model.Hero.PrimaryAttributeName.ToLower()).png"
+                 class="img-fluid rounded-start" alt="Attribute image">
         </div>
         <div class="col-md-5">
             <h5 class="card-title">@Model.Hero.Name</h5>
         </div>
     </div>
     <div class="row g-0">
-        <div class="card-body col-md-8">
+        <div class="card-body col-md-8 border border-3 border-danger">
             <p class="text-center">
                 <strong>Stats:</strong>
             </p>
-            <div class="d-flex justify-content-center flex-wrap">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <p>Attack type: @Model.Hero.AttackType</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Attack range: @Model.Hero.AttackRange</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Attack damage: @Model.Hero.StartingDamageMin - @Model.Hero.StartingDamageMax</p>
-                    </li>
-                </ul>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <p>Armor: @Math.Round(Model.Hero.StartingArmor, 1)</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Move speed: @Model.Hero.StartingMovespeed</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Complexity: @Model.Hero.Complexity</p>
-                    </li>
-                </ul>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <p>Strength: @Model.Hero.StrengthBase</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Agility: @Model.Hero.AgilityBase</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Intelligence: @Model.Hero.IntelligenceBase</p>
-                    </li>
-                </ul>
-            </div>
+            <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
+                <li class="list-group-item">
+                    <p>Attack type: @Model.Hero.AttackType</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Attack range: @Model.Hero.AttackRange</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Attack damage: @Model.Hero.StartingDamageMin - @Model.Hero.StartingDamageMax</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Armor: @Math.Round(Model.Hero.StartingArmor, 1)</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Move speed: @Model.Hero.StartingMovespeed</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Complexity: @Model.Hero.Complexity</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Strength: @Model.Hero.StrengthBase</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Agility: @Model.Hero.AgilityBase</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Intelligence: @Model.Hero.IntelligenceBase</p>
+                </li>
+                <li class="list-group-item">
+                </li>
+            </ul>
         </div>
-        <div class="card-body col-md-4">
+        <div class="card-body col-md-4 border border-3 border-danger">
             <p class="card-text">
                 <p class="text-center">
                     <strong>Winrates:</strong>
@@ -73,6 +69,25 @@
                     </li>
                 </ul>
             </p>
+        </div>
+        <div class="card-body col-md-8 border border-3 border-danger">
+            <p class="text-center">
+                <strong>Roles:</strong>
+            </p>
+            <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
+                @foreach (var role in Model.Hero.Roles)
+                {
+                    <li class="list-group-item">
+                        <p>@role.Name</p>
+                        <div class="progress" role="progressbar" aria-label="@role.Name"
+                             aria-valuenow="@(Math.Round(role.Level * 33.33))" aria-valuemin="0" aria-valuemax="3">
+                            <div class="progress-bar" style="width: @(Math.Round(role.Level * 33.33))%"></div>
+                        </div>
+                    </li>
+                }
+                <li class="list-group-item">
+                </li>
+            </ul>
         </div>
     </div>
 </div>

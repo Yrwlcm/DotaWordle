@@ -9,7 +9,7 @@ namespace DotaWordle.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class HeroesController(HeroesDbContext context, IMapperBase mapper) : ControllerBase
+public class HeroesController(HeroesDbContext context, IMapper mapper) : ControllerBase
 {
     [HttpGet]
     public ActionResult<IEnumerable<Hero>> Get()
