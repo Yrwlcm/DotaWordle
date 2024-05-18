@@ -1,18 +1,36 @@
 ﻿@page
 @model DotaWordle.Pages.Guess
+@* @section Scripts { *@
+@*     <script> *@
+@*         window.selectHeroUrl = '@Url.Page("Guess", "SelectHero")'; *@
+@*     </script> *@
+@* } *@
+
+<div class="search-container border border-3 border-danger">
+    <input type="text" class="form-control" placeholder="Введите имя героя ..." id="search-input">
+    <div class="results" id="results">
+        @foreach (var hero in Model.Heroes)
+        {
+            <div class="result-item" data-id="@hero.Id">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(hero.Name.Replace(" ", "_").ToLower()).png" alt="hero.Name">
+                <span>@hero.Name</span>
+            </div>
+        }
+    </div>
+</div>
 
 <div class="card card-custom hero-card">
-    <div class="row g-0 mx-5 flex-row align-items-center justify-content-center border border-3 border-danger">
+    <div class="row g-0 mx-5 text-center flex-row align-items-center justify-content-center border border-3 border-danger">
         <div class="col-md-3 d-flex align-items-center justify-content-center">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(Model.Hero.Name.Replace(" ", "_").ToLower()).png"
-                 class="img-fluid rounded-start" alt="Hero Image">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(Model.HiddenHero.Name.Replace(" ", "_").ToLower()).png"
+                 class="img-fluid rounded-start" alt="@Model.HiddenHero.Name">
         </div>
         <div class="col-md-1 d-flex align-items-center justify-content-center">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_@(Model.Hero.PrimaryAttributeName.ToLower()).png"
-                 class="img-fluid rounded-start" alt="Attribute image">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_@(Model.HiddenHero.PrimaryAttributeName.ToLower()).png"
+                 class="img-fluid rounded-start" alt="@Model.HiddenHero.PrimaryAttributeName">
         </div>
         <div class="col-md-5">
-            <h5 class="card-title">@Model.Hero.Name</h5>
+            <h5 class="card-title">@Model.HiddenHero.Name</h5>
         </div>
     </div>
     <div class="row g-0">
@@ -22,31 +40,31 @@
             </p>
             <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
                 <li class="list-group-item">
-                    <p>Attack type: @Model.Hero.AttackType</p>
+                    <p>Attack type: @Model.HiddenHero.AttackType</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Attack range: @Model.Hero.AttackRange</p>
+                    <p>Attack range: @Model.HiddenHero.AttackRange</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Attack damage: @Model.Hero.StartingDamageMin - @Model.Hero.StartingDamageMax</p>
+                    <p>Attack damage: @Model.HiddenHero.StartingDamageMin - @Model.HiddenHero.StartingDamageMax</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Armor: @Math.Round(Model.Hero.StartingArmor, 1)</p>
+                    <p>Armor: @Math.Round(Model.HiddenHero.StartingArmor, 1)</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Move speed: @Model.Hero.StartingMovespeed</p>
+                    <p>Move speed: @Model.HiddenHero.StartingMovespeed</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Complexity: @Model.Hero.Complexity</p>
+                    <p>Complexity: @Model.HiddenHero.Complexity</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Strength: @Model.Hero.StrengthBase</p>
+                    <p>Strength: @Model.HiddenHero.StrengthBase</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Agility: @Model.Hero.AgilityBase</p>
+                    <p>Agility: @Model.HiddenHero.AgilityBase</p>
                 </li>
                 <li class="list-group-item">
-                    <p>Intelligence: @Model.Hero.IntelligenceBase</p>
+                    <p>Intelligence: @Model.HiddenHero.IntelligenceBase</p>
                 </li>
                 <li class="list-group-item">
                 </li>
@@ -59,13 +77,13 @@
                 </p>
                 <ul>
                     <li>
-                        <p>Herald: @Model.Hero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Herald").Winrate%</p>
+                        <p>Herald: @Model.HiddenHero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Herald").Winrate%</p>
                     </li>
                     <li>
-                        <p>Legend: @Model.Hero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Legend").Winrate%</p>
+                        <p>Legend: @Model.HiddenHero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Legend").Winrate%</p>
                     </li>
                     <li>
-                        <p>Immortal: @Model.Hero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Immortal").Winrate%</p>
+                        <p>Immortal: @Model.HiddenHero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Immortal").Winrate%</p>
                     </li>
                 </ul>
             </p>
@@ -75,7 +93,7 @@
                 <strong>Roles:</strong>
             </p>
             <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
-                @foreach (var role in Model.Hero.Roles)
+                @foreach (var role in Model.HiddenHero.Roles)
                 {
                     <li class="list-group-item">
                         <p>@role.Name</p>
@@ -91,3 +109,7 @@
         </div>
     </div>
 </div>
+
+@Html.AntiForgeryToken();
+
+<script src="JavaScript/Searchbar.js"></script>

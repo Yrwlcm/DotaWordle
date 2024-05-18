@@ -12,6 +12,8 @@ namespace DotaWordle.Controllers;
 public class HeroesController(IHeroParametersComparer comparer, IHeroRepository heroRepository)
     : ControllerBase
 {
+    private static readonly Random random = new();
+
     [HttpGet]
     public ActionResult<IEnumerable<Hero>> Get()
     {
@@ -40,5 +42,31 @@ public class HeroesController(IHeroParametersComparer comparer, IHeroRepository 
             return NotFound(new { message = "Second hero not found" });
 
         return Ok(comparer.CompareHeroes(firstHero, secondHero));
+    }
+
+    [HttpPost("generate/hiddenhero")]
+    public ActionResult GenerateHiddenHero()
+    {
+        var heroIds = heroRepository.GetHeroes().Select(hero => hero.Id).OrderBy(id => id).ToList();
+        var randomId = random.Next(heroIds.Count);
+        var heroId = heroIds[randomId];
+
+        HttpContext.Session.SetInt32("hiddenHeroId", heroId);
+
+        return Ok(new { hiddenHeroId = heroId });
+    }
+
+    [HttpGet("compare/hiddenHero/{heroId:int}")]
+    public ActionResult<HeroComparison> CompareToHiddenHero(int heroId)
+    {
+        var hiddenHeroId = HttpContext.Session.GetInt32("hiddenHeroId");
+
+        if (hiddenHeroId == null)
+            return NotFound(new { message = "Hidden was not generated" });
+
+        var hiddenHero = heroRepository.GetHeroById(hiddenHeroId.Value);
+        var hero = heroRepository.GetHeroById(heroId);
+
+        return Ok(new { hero, comparision = comparer.CompareHeroes(hiddenHero, hero) });
     }
 }
