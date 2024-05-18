@@ -9,58 +9,36 @@ namespace DotaWordle.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class HeroesController(HeroesDbContext context, IMapper mapper) : ControllerBase
+public class HeroesController(IHeroParametersComparer comparer, IHeroRepository heroRepository)
+    : ControllerBase
 {
     [HttpGet]
     public ActionResult<IEnumerable<Hero>> Get()
     {
-        var heroes = context.Heroes
-            .AsNoTracking()
-            .Include(hero => hero.Roles)
-            .Include(hero => hero.WeekWinrates)
-            .Select(heroEntity => mapper.Map<Hero>(heroEntity));
-
-        return Ok(heroes);
+        return Ok(heroRepository.GetHeroes());
     }
 
     [HttpGet("{id:int}")]
     public ActionResult<Hero> Get(int id)
     {
-        var hero = context.Heroes
-            .AsNoTracking()
-            .Where(hero => hero.Id == id)
-            .Include(hero => hero.Roles)
-            .Include(hero => hero.WeekWinrates)
-            .FirstOrDefault();
-
+        var hero = heroRepository.GetHeroById(id);
         if (hero == null)
             return NotFound(new { message = "Hero not found" });
 
-        return Ok(mapper.Map<Hero>(hero));
+        return Ok(hero);
     }
 
     [HttpGet("compare/{heroId:int}/{comparedHeroId:int}")]
     public ActionResult<HeroComparison> CompareHeroes(int heroId, int comparedHeroId)
     {
-        var heroes = context.Heroes
-            .AsNoTracking()
-            .Where(hero => hero.Id == heroId || hero.Id == comparedHeroId)
-            .Include(hero => hero.Roles)
-            .Include(hero => hero.WeekWinrates);
+        var firstHero = heroRepository.GetHeroById(heroId);
+        var secondHero = heroRepository.GetHeroById(comparedHeroId);
 
-        var firstHeroEntity = heroes.FirstOrDefault(hero => hero.Id == heroId);
-        var secondHeroEntity = heroes.FirstOrDefault(hero => hero.Id == comparedHeroId);
-
-        if (firstHeroEntity == null)
+        if (firstHero == null)
             return NotFound(new { message = "First hero not found" });
-        if (secondHeroEntity == null)
+        if (secondHero == null)
             return NotFound(new { message = "Second hero not found" });
 
-        var firstHero = mapper.Map<Hero>(firstHeroEntity);
-        var secondHero = mapper.Map<Hero>(secondHeroEntity);
-
-        var heroComparer = new HeroParametersComparer();
-
-        return Ok(heroComparer.CompareHeroes(firstHero, secondHero));
+        return Ok(comparer.CompareHeroes(firstHero, secondHero));
     }
 }

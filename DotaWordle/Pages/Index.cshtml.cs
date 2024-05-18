@@ -1,17 +1,18 @@
-﻿using DotaWordle.DataAcess.Postgres;
+﻿using Dota_Wordle.Logic;
+using DotaWordle.DataAcess.Postgres;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace DotaWordle.Pages;
 
 [IgnoreAntiforgeryToken]
-public class Index(HeroesDbContext context) : PageModel
+public class Index(IHeroRepository heroRepository) : PageModel
 {
     private static readonly Random Random = new();
     
     public IActionResult OnPostChooseHeroIdAndRedirect()
     {
-        var heroIds = context.Heroes.Select(x => x.Id).ToList();
+        var heroIds = heroRepository.GetHeroes().Select(hero => hero.Id).OrderBy(id => id).ToList();
         var randomId = Random.Next(heroIds.Count);
         var heroId = heroIds[randomId];
         

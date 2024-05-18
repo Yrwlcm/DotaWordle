@@ -4,7 +4,7 @@ using DotaWordle.Models;
 
 namespace Dota_Wordle.Logic;
 
-public class HeroParametersComparer
+public class HeroParametersComparer : IHeroParametersComparer
 {
     private readonly ImmutableArray<RankBracket> comparingRankBrackets =
     [

@@ -1,3 +1,4 @@
+using Dota_Wordle.Logic;
 using DotaWordle.MappingProfiles;
 using DotaWordle.DataAcess.Postgres;
 
@@ -7,6 +8,7 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddControllers();
 builder.Services.AddRazorPages();
+builder.Services.AddMemoryCache();
 builder.Services.AddAutoMapper(typeof(HeroProfile), typeof(RoleProfile), typeof(WinrateProfile));
 
 builder.Services.AddSession(options =>
@@ -19,6 +21,10 @@ builder.Services.AddSession(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<HeroesDbContext>();
+
+builder.Services.AddScoped<IHeroParametersComparer, HeroParametersComparer>();
+
+builder.Services.AddScoped<IHeroRepository, HeroRepository>();
 
 var app = builder.Build();
 
