@@ -19,59 +19,60 @@
     </div>
 </div>
 
-<div class="card card-custom hero-card">
-    <div class="row g-0 mx-5 text-center flex-row align-items-center justify-content-center border border-3 border-danger">
-        <div class="col-md-3 d-flex align-items-center justify-content-center">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(Model.HiddenHero.Name.Replace(" ", "_").ToLower()).png"
-                 class="img-fluid rounded-start" alt="@Model.HiddenHero.Name">
+<div class="cards-container">
+    <div class="card card-custom hero-card">
+        <div class="row g-0 mx-5 text-center flex-row align-items-center justify-content-center border border-3 border-danger">
+            <div class="col-md-3 d-flex align-items-center justify-content-center">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(Model.HiddenHero.Name.Replace(" ", "_").ToLower()).png"
+                     class="img-fluid rounded-start" alt="@Model.HiddenHero.Name">
+            </div>
+            <div class="col-md-1 d-flex align-items-center justify-content-center">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_@(Model.HiddenHero.PrimaryAttributeName.ToLower()).png"
+                     class="img-fluid rounded-start" alt="@Model.HiddenHero.PrimaryAttributeName">
+            </div>
+            <div class="col-md-5">
+                <h5 class="card-title">@Model.HiddenHero.Name</h5>
+            </div>
         </div>
-        <div class="col-md-1 d-flex align-items-center justify-content-center">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_@(Model.HiddenHero.PrimaryAttributeName.ToLower()).png"
-                 class="img-fluid rounded-start" alt="@Model.HiddenHero.PrimaryAttributeName">
-        </div>
-        <div class="col-md-5">
-            <h5 class="card-title">@Model.HiddenHero.Name</h5>
-        </div>
-    </div>
-    <div class="row g-0">
-        <div class="card-body col-md-8 border border-3 border-danger">
-            <p class="text-center">
-                <strong>Stats:</strong>
-            </p>
-            <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
-                <li class="list-group-item">
-                    <p>Attack type: @Model.HiddenHero.AttackType</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Attack range: @Model.HiddenHero.AttackRange</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Attack damage: @Model.HiddenHero.StartingDamageMin - @Model.HiddenHero.StartingDamageMax</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Armor: @Math.Round(Model.HiddenHero.StartingArmor, 1)</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Move speed: @Model.HiddenHero.StartingMovespeed</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Complexity: @Model.HiddenHero.Complexity</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Strength: @Model.HiddenHero.StrengthBase</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Agility: @Model.HiddenHero.AgilityBase</p>
-                </li>
-                <li class="list-group-item">
-                    <p>Intelligence: @Model.HiddenHero.IntelligenceBase</p>
-                </li>
-                <li class="list-group-item">
-                </li>
-            </ul>
-        </div>
-        <div class="card-body col-md-4 border border-3 border-danger">
-            <p class="card-text">
+        <div class="row g-0">
+            <div class="card-body col-md-8 border border-3 border-danger">
+                <p class="text-center">
+                    <strong>Stats:</strong>
+                </p>
+                <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
+                    <li class="list-group-item">
+                        <p>Attack type: @Model.HiddenHero.AttackType</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Attack range: @Model.HiddenHero.AttackRange</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Attack damage: @Model.HiddenHero.StartingDamageMin - @Model.HiddenHero.StartingDamageMax</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Armor: @Math.Round(Model.HiddenHero.StartingArmor, 1)</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Move speed: @Model.HiddenHero.StartingMovespeed</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Complexity: @Model.HiddenHero.Complexity</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Strength: @Model.HiddenHero.StrengthBase</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Agility: @Model.HiddenHero.AgilityBase</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Intelligence: @Model.HiddenHero.IntelligenceBase</p>
+                    </li>
+                    <li class="list-group-item">
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body col-md-4 border border-3 border-danger">
+                <p class="card-text">
                 <p class="text-center">
                     <strong>Winrates:</strong>
                 </p>
@@ -86,15 +87,15 @@
                         <p>Immortal: @Model.HiddenHero.WeekWinrates.FirstOrDefault(w => w.RankBracket == "Immortal").Winrate%</p>
                     </li>
                 </ul>
-            </p>
-        </div>
-        <div class="card-body col-md-8 border border-3 border-danger">
-            <p class="text-center">
-                <strong>Roles:</strong>
-            </p>
-            <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
-                @foreach (var role in Model.HiddenHero.Roles)
-                {
+                </p>
+            </div>
+            <div class="card-body col-md-8 border border-3 border-danger">
+                <p class="text-center">
+                    <strong>Roles:</strong>
+                </p>
+                <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
+                    @foreach (var role in Model.HiddenHero.Roles)
+                    {
                     <li class="list-group-item">
                         <p>@role.Name</p>
                         <div class="progress" role="progressbar" aria-label="@role.Name"
@@ -102,13 +103,15 @@
                             <div class="progress-bar" style="width: @(Math.Round(role.Level * 33.33))%"></div>
                         </div>
                     </li>
-                }
-                <li class="list-group-item">
-                </li>
-            </ul>
+                    }
+                    <li class="list-group-item">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+
 
 @Html.AntiForgeryToken();
 

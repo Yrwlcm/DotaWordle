@@ -12,13 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/Controllers/HeroesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Controllers/HeroesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/wwwroot/Css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/wwwroot/Css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +51,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Http/Http/src/DefaultHttpContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Mvc/Mvc.RazorPages/src/Infrastructure/ExecutorFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/087e15321bb712ef6fe8b0ba6f8bd12facf92629/src/libraries/System.Linq/src/System/Linq/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/087e15321bb712ef6fe8b0ba6f8bd12facf92629/src/libraries/System.Private.CoreLib/src/System/Int16.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray_1.Minimal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Linq/src/System/Linq/Select.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Object.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,34 +62,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/327e3a92ae94d9dc98b3fe2b7ca1c80d784c39d6b851fb0259e784c3ae6928/Extensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4192c016ac87865a13f36155d8104b1ccc818c55593b451cc2168ac54b76f6f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4eae6449caa21e90c2ff2d63846343457a0e4192fb25892da80d78feb4774f/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c049e4fa272643566050eb33d3c3e1d8648f89df6697263b665621b6f22990/Profile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Configurations/HeroWeekWinrateConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataAcess.Postgres/Models/HeroWeekWinrateEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroConverterTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/obj/Debug/net8.0/Verify.Attributes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Controllers/HeroesController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Controllers/HeroesController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Controllers/HeroesController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Logic/HeroParametersComparer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Logic/HeroParametersComparer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Logic/HeroParametersComparer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Logic/HeroRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Logic/HeroRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Logic/IHeroParametersComparer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Logic/IHeroRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Guess.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Guess.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Guess.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Guess.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Index.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Worker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -275,7 +250,8 @@
       <workItem from="1715952279767" duration="4738000" />
       <workItem from="1716030016118" duration="3705000" />
       <workItem from="1716045348449" duration="3103000" />
-      <workItem from="1716056677760" duration="1637000" />
+      <workItem from="1716056677760" duration="4649000" />
+      <workItem from="1716112797138" duration="2839000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -429,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716046554989</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Search bar to select hero and compare it">
+      <option name="closed" value="true" />
+      <created>1716061384799</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716061384799</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +449,8 @@
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Hero repository" />
     <MESSAGE value="Hero repository using cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hero repository using cache" />
+    <MESSAGE value="Search bar to select hero and compare it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search bar to select hero and compare it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -515,31 +500,10 @@
           </properties>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs</url>
-          <line>17</line>
-          <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle\Pages\Guess.cshtml.cs" containingFunctionPresentation="Method 'OnGet'">
-            <startOffsets>
-              <option value="473" />
-            </startOffsets>
-            <endOffsets>
-              <option value="474" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs</url>
-          <line>30</line>
-          <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle\Pages\Guess.cshtml.cs" containingFunctionPresentation="Method 'OnGet'">
-            <startOffsets>
-              <option value="839" />
-            </startOffsets>
-            <endOffsets>
-              <option value="853" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="29" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
