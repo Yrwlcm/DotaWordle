@@ -30,12 +30,4 @@ public class Guess(IHeroParametersComparer heroComparer, IHeroRepository heroRep
 
         return Page();
     }
-
-    // public IActionResult OnGetSelectHero(int heroId)
-    // {
-    //     var hiddenHero = heroRepository.GetHeroById(HttpContext.Session.GetInt32("hiddenHeroId")!.Value);
-    //     var selectedHero = heroRepository.GetHeroById(heroId);
-    //
-    //     return new JsonResult(heroComparer.CompareHeroes(hiddenHero, selectedHero));
-    // }
 }

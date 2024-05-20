@@ -15,68 +15,88 @@
                 </div>
             </div>
             <div class="row g-0">
-                <div class="card-body col-md-8 border border-3 border-danger">
+                <div class="card-body col-md-4 border border-3 border-danger" style="padding: 0;">
                     <p class="text-center">
                         <strong>Stats:</strong>
                     </p>
-                    <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
+                    <ul class="custom-grid-container list-group list-group-flush border border-3 border-danger" style="padding: 0;">
                         <li class="list-group-item" id="attackType">
-                            <p>Attack type: ${heroData.attackType}</p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/${heroData.attackType.toLowerCase()}.svg"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            ${heroData.attackType}
                         </li>
                         <li class="list-group-item" id="attackRange">
-                            <p>Attack range: ${heroData.attackRange}</p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            ${heroData.attackRange}
                         </li>
                         <li class="list-group-item">
-                            <p>Attack damage: <span id="attackDamageMin">${heroData.startingDamageMin}</span>  - <span id="attackDamageMax">${heroData.startingDamageMax}</span> </p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            <span id="attackDamageMin">${heroData.startingDamageMin}</span> - <span id="attackDamageMax">${heroData.startingDamageMax}</span>
                         </li>
                         <li class="list-group-item" id="armor">
-                            <p>Armor: ${Math.round(heroData.startingArmor * 10) / 10}</p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            ${Math.round(heroData.startingArmor * 10) / 10}
                         </li>
                         <li class="list-group-item" id="movespeed">
-                            <p>Move speed: ${heroData.startingMovespeed}</p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            ${heroData.startingMovespeed}
                         </li>
                         <li class="list-group-item" id="complexity">
-                            <p>Complexity: ${heroData.complexity}</p>
+                            Complexity: ${heroData.complexity}
                         </li>
                         <li class="list-group-item" id="strengthBase">
-                            <p>Strength: ${heroData.strengthBase}</p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            ${heroData.strengthBase}
                         </li>
                         <li class="list-group-item" id="agilityBase">
-                            <p>Agility: ${heroData.agilityBase}</p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            ${heroData.agilityBase}
                         </li>
                         <li class="list-group-item" id="intelligenceBase">
-                            <p>Intelligence: ${heroData.intelligenceBase}</p>
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png"
+                             style="width: 30px; height: 30px; margin-right: 5px;"/>
+                            ${heroData.intelligenceBase}
                         </li>
                         <li class="list-group-item"></li>
                     </ul>
                 </div>
-                <div class="card-body col-md-4 border border-3 border-danger">
-                    <p class="card-text">
-                        <p class="text-center">
-                            <strong>Winrates:</strong>
-                        </p>
-                        <ul>
-                            <li id="heraldWinrate">
-                                <p>Herald: ${heroData.weekWinrates.find(w => w.rankBracket === "Herald").winrate}%</p>
-                            </li>
-                            <li id="legendWinrate">
-                                <p>Legend: ${heroData.weekWinrates.find(w => w.rankBracket === "Legend").winrate}%</p>
-                            </li>
-                            <li id="immortalWinrate">
-                                <p>Immortal: ${heroData.weekWinrates.find(w => w.rankBracket === "Immortal").winrate}%</p>
-                            </li>
-                        </ul>
+                <div class="card-body col-md-1 border border-3 border-danger" style="padding: 0;">
+                    <p class="text-center">
+                        <strong>Winrates:</strong>
                     </p>
+                    <ul class="d-flex flex-column align-items-center justify-content-center list-group list-group-flush">
+                        <li id="heraldWinrate" class="list-group-item p-0">
+                            <img src="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_1.png" alt="Herald"
+                            style="width: 53px; height: 53px; margin-right: 5px;"/>
+                            ${heroData.weekWinrates.find(w => w.rankBracket === "Herald").winrate}%
+                        </li>
+                        <li id="legendWinrate" class="list-group-item p-0">
+                            <img src="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_5.png" alt="Legend"
+                            style="width: 53px; height: 53px; margin-right: 5px;"/>
+                            ${heroData.weekWinrates.find(w => w.rankBracket === "Legend").winrate}%
+                        </li>
+                        <li id="immortalWinrate" class="list-group-item p-0">
+                            <img src="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_8.png" alt="Immortal"
+                            style="width: 53px; height: 53px; margin-right: 5px;"/>
+                            ${heroData.weekWinrates.find(w => w.rankBracket === "Immortal").winrate}%
+                        </li>
+                    </ul>
                 </div>
-                <div class="card-body col-md-8 border border-3 border-danger">
+                <div class="card-body col-md-4 border border-3 border-danger" style="padding: 0;">
                     <p class="text-center">
                         <strong>Roles:</strong>
                     </p>
-                    <ul class="my-grid-container list-group list-group-flush border border-3 border-danger">
+                    <ul class="custom-grid-container list-group list-group-flush border border-3 border-danger" style="padding: 0;">
                         ${heroData.roles.map(role => `
                             <li class="list-group-item" id="${role.name}">
-                                <p>${role.name}</p>
-                                <div class="progress" role="progressbar" aria-label="${role.name}"
+                                <p style="margin-bottom: 0">${role.name}</p>
+                                <div class="progress" role="progressbar" aria-label="${role.name}" style="height: 10px;"
                                      aria-valuenow="${Math.round(role.level * 33.33)}" aria-valuemin="0" aria-valuemax="3">
                                     <div class="progress-bar" style="width: ${Math.round(role.level * 33.33)}%"></div>
                                 </div>
@@ -105,18 +125,17 @@ function AddComparingStylesToHeroCard(heroElement, comparisionJson) {
     AddComparingStyle($('#heraldWinrate'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Herald").winrateComparision);
     AddComparingStyle($('#legendWinrate'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Legend").winrateComparision);
     AddComparingStyle($('#immortalWinrate'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Immortal").winrateComparision);
-    comparisionJson.rolesComparision.forEach(role => {AddComparingStyle($(`#${role.name}`), role.levelComparision)});
+    comparisionJson.rolesComparision.forEach(role => {
+        AddComparingStyle($(`#${role.name}`), role.levelComparision)
+    });
 }
 
 function AddComparingStyle(element, comparisionValue) {
-    console.log(element, comparisionValue);
     if (comparisionValue > 0) {
         element.addClass('bg-danger');
-    }
-    else if (comparisionValue < 0) {
+    } else if (comparisionValue < 0) {
         element.addClass('bg-danger-subtle');
-    }
-    else {
+    } else {
         element.addClass('bg-success');
     }
 }
@@ -174,7 +193,6 @@ $(document).ready(function () {
         const heroId = $(this).data('id');
         const antiForgeryToken = $('input[name="__RequestVerificationToken"]').val();
 
-        console.log(heroId);
         $.ajax({
             url: `api/heroes/compare/hiddenHero/${heroId}`,
             method: 'GET',
@@ -185,12 +203,9 @@ $(document).ready(function () {
                 const hero = response.hero;
                 const heroComparision = response.comparision;
 
-                console.log(hero);
-                console.log(heroComparision);
-                
                 const newHeroElement = CreateHeroCard(hero);
                 $('.cards-container').prepend(newHeroElement);
-                AddComparingStylesToHeroCard(newHeroElement, heroComparision);
+                // AddComparingStylesToHeroCard(newHeroElement, heroComparision);
             },
             error: function (xhr, status, error) {
                 alert('Произошла ошибка при выборе героя.');
