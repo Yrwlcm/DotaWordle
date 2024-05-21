@@ -24,7 +24,7 @@ public class Guess(IHeroParametersComparer heroComparer, IHeroRepository heroRep
         if (hiddenHeroNumber == null)
             return StatusCode(500);
 
-        Heroes = heroRepository.GetHeroes();
+        Heroes = heroRepository.GetHeroes().OrderBy(x => x.Name).ToList();
 
         HiddenHero = heroRepository.GetHeroById(hiddenHeroNumber.Value);
 

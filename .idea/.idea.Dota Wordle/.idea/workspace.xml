@@ -11,13 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/wwwroot/Css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/wwwroot/Css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js" afterDir="false" />
-    </list>
+    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -258,6 +252,7 @@
       <workItem from="1716137781773" duration="4371000" />
       <workItem from="1716143387956" duration="97000" />
       <workItem from="1716223656474" duration="2054000" />
+      <workItem from="1716225803319" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -427,7 +422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716115928122</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Ranks to images">
+      <option name="closed" value="true" />
+      <created>1716226080774</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716226080774</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +468,8 @@
     <MESSAGE value="Hero repository using cache" />
     <MESSAGE value="Search bar to select hero and compare it" />
     <MESSAGE value="Stats highlight prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stats highlight prototype" />
+    <MESSAGE value="Ranks to images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ranks to images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

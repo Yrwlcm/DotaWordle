@@ -1,12 +1,7 @@
 ﻿@page
 @model DotaWordle.Pages.Guess
-@* @section Scripts { *@
-@*     <script> *@
-@*         window.selectHeroUrl = '@Url.Page("Guess", "SelectHero")'; *@
-@*     </script> *@
-@* } *@
 
-<div class="search-container border border-3 border-danger">
+<div class="search-container dp">
     <input type="text" class="form-control" placeholder="Введите имя героя ..." id="search-input">
     <div class="results" id="results">
         @foreach (var hero in Model.Heroes)

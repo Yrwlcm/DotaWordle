@@ -1,104 +1,119 @@
 ﻿function CreateHeroCard(heroData) {
     return `
         <div class="card card-custom hero-card">
-            <div class="row g-0 mx-5 text-center flex-row align-items-center justify-content-center border border-3 border-danger">
+            <div class="row g-0 mx-5 my-3 text-center flex-row align-items-center justify-content-center ">
                 <div class="col-md-3 d-flex align-items-center justify-content-center">
                     <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${heroData.name.replace(/ /g, "_").toLowerCase()}.png"
                          class="img-fluid rounded-start" alt="${heroData.name}">
                 </div>
-                <div class="col-md-1 d-flex align-items-center justify-content-center" id="primaryAttribute">
+                <div class="col-md-1 d-flex align-items-center justify-content-center">
                     <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_${heroData.primaryAttributeName.toLowerCase()}.png"
-                         class="img-fluid rounded-start" alt="${heroData.primaryAttributeName}">
+                         class="img-fluid rounded-start" alt="${heroData.primaryAttributeName}"
+                         style="width: 60px;">
+                         
+                     <img id="primaryAttributeStatus" src="Images/ComparingSymbols/cross.png" style="width: 25px; height: 25px; margin-left: 10px;">
                 </div>
-                <div class="col-md-5">
-                    <h5 class="card-title">${heroData.name}</h5>
+                <div class="col-md-5 hero-name">
+                    <p class="card-title">${heroData.name}</p>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="card-body col-md-4 border border-3 border-danger" style="padding: 0;">
+            <div class="row g-0 p-3">
+                <div class="card-body col-md-4 border-start border-end" style="padding: 0;">
                     <p class="text-center">
                         <strong>Stats:</strong>
                     </p>
-                    <ul class="custom-grid-container list-group list-group-flush border border-3 border-danger" style="padding: 0;">
-                        <li class="list-group-item" id="attackType">
+                    <ul class="custom-grid-container list-group list-group-flush " style="padding: 0;">
+                        <li class="list-group-item" >
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/${heroData.attackType.toLowerCase()}.svg"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.attackType}
+                            <img id="attackTypeStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li class="list-group-item" id="attackRange">
+                        <li class="list-group-item" >
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.attackRange}
+                            <img id="attackRangeStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item">
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
-                            <span id="attackDamageMin">${heroData.startingDamageMin}</span> - <span id="attackDamageMax">${heroData.startingDamageMax}</span>
+                            <img id="attackDamageMinStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-right: 8px;"><span >${heroData.startingDamageMin}</span>
+                             - <span>${heroData.startingDamageMax}</span><img id="attackDamageMaxStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li class="list-group-item" id="armor">
+                        <li class="list-group-item">
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${Math.round(heroData.startingArmor * 10) / 10}
+                            <img id="armorStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li class="list-group-item" id="movespeed">
+                        <li class="list-group-item">
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.startingMovespeed}
+                            <img id="movespeedStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li class="list-group-item" id="complexity">
+                        <li class="list-group-item" >
                             Complexity: ${heroData.complexity}
+                            <img id="complexityStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li class="list-group-item" id="strengthBase">
+                        <li class="list-group-item" >
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.strengthBase}
+                            <img id="strengthBaseStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li class="list-group-item" id="agilityBase">
+                        <li class="list-group-item" >
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.agilityBase}
+                            <img id="agilityBaseStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li class="list-group-item" id="intelligenceBase">
+                        <li class="list-group-item" >
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.intelligenceBase}
+                            <img id="intelligenceBaseStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item"></li>
                     </ul>
                 </div>
-                <div class="card-body col-md-1 border border-3 border-danger" style="padding: 0;">
+                <div class="card-body col-md-1 border-start border-end" style="padding: 0;">
                     <p class="text-center">
                         <strong>Winrates:</strong>
                     </p>
                     <ul class="d-flex flex-column align-items-center justify-content-center list-group list-group-flush">
-                        <li id="heraldWinrate" class="list-group-item p-0">
+                        <li class="list-group-item p-0">
                             <img src="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_1.png" alt="Herald"
                             style="width: 53px; height: 53px; margin-right: 5px;"/>
                             ${heroData.weekWinrates.find(w => w.rankBracket === "Herald").winrate}%
+                            <img id="heraldWinrateStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li id="legendWinrate" class="list-group-item p-0">
+                        <li class="list-group-item p-0">
                             <img src="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_5.png" alt="Legend"
                             style="width: 53px; height: 53px; margin-right: 5px;"/>
                             ${heroData.weekWinrates.find(w => w.rankBracket === "Legend").winrate}%
+                            <img id="legendWinrateStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
-                        <li id="immortalWinrate" class="list-group-item p-0">
+                        <li class="list-group-item p-0">
                             <img src="https://cdn.stratz.com/images/dota2/seasonal_rank/medal_8.png" alt="Immortal"
                             style="width: 53px; height: 53px; margin-right: 5px;"/>
                             ${heroData.weekWinrates.find(w => w.rankBracket === "Immortal").winrate}%
+                            <img id="immortalWinrateStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                     </ul>
                 </div>
-                <div class="card-body col-md-4 border border-3 border-danger" style="padding: 0;">
+                <div class="card-body col-md-4 border-start border-end" style="padding: 0;">
                     <p class="text-center">
                         <strong>Roles:</strong>
                     </p>
-                    <ul class="custom-grid-container list-group list-group-flush border border-3 border-danger" style="padding: 0;">
+                    <ul class="custom-grid-container list-group list-group-flush " style="padding: 0;">
                         ${heroData.roles.map(role => `
-                            <li class="list-group-item" id="${role.name}">
+                            <li class="list-group-item">
                                 <p style="margin-bottom: 0">${role.name}</p>
                                 <div class="progress" role="progressbar" aria-label="${role.name}" style="height: 10px;"
                                      aria-valuenow="${Math.round(role.level * 33.33)}" aria-valuemin="0" aria-valuemax="3">
-                                    <div class="progress-bar" style="width: ${Math.round(role.level * 33.33)}%"></div>
+                                    <div id="${role.name}Status" class="progress-bar" style="width: ${Math.round(role.level * 33.33)}%"></div>
                                 </div>
                             </li>
                         `).join('')}
@@ -111,32 +126,48 @@
 }
 
 function AddComparingStylesToHeroCard(heroElement, comparisionJson) {
-    AddComparingStyle($('#primaryAttribute'), comparisionJson.samePrimaryAttribute);
-    AddComparingStyle($('#attackType'), comparisionJson.sameAttackType);
-    AddComparingStyle($('#attackRange'), comparisionJson.attackRangeComparision);
-    AddComparingStyle($('#attackDamageMin'), comparisionJson.attackDamageMinComparision);
-    AddComparingStyle($('#attackDamageMax'), comparisionJson.attackDamageMaxComparision);
-    AddComparingStyle($('#armor'), comparisionJson.startingArmorComparision);
-    AddComparingStyle($('#movespeed'), comparisionJson.startingMovespeedComparision);
-    AddComparingStyle($('#complexity'), comparisionJson.complexityComparision);
-    AddComparingStyle($('#strengthBase'), comparisionJson.strengthBaseComparision);
-    AddComparingStyle($('#agilityBase'), comparisionJson.agilityBaseComparision);
-    AddComparingStyle($('#intelligenceBase'), comparisionJson.intelligenceBaseComparision);
-    AddComparingStyle($('#heraldWinrate'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Herald").winrateComparision);
-    AddComparingStyle($('#legendWinrate'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Legend").winrateComparision);
-    AddComparingStyle($('#immortalWinrate'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Immortal").winrateComparision);
+    AddComparingStyleToBool($('#primaryAttributeStatus'), comparisionJson.samePrimaryAttributeName);
+    AddComparingStyleToBool($('#attackTypeStatus'), comparisionJson.sameAttackType);
+    AddComparingStyleToNumeric($('#attackRangeStatus'), comparisionJson.attackRangeComparision);
+    AddComparingStyleToNumeric($('#attackDamageMinStatus'), comparisionJson.startingDamageMinComparision);
+    AddComparingStyleToNumeric($('#attackDamageMaxStatus'), comparisionJson.startingDamageMaxComparision);
+    AddComparingStyleToNumeric($('#armorStatus'), comparisionJson.startingArmorComparision);
+    AddComparingStyleToNumeric($('#movespeedStatus'), comparisionJson.startingMovespeedComparision);
+    AddComparingStyleToNumeric($('#complexityStatus'), comparisionJson.complexityComparision);
+    AddComparingStyleToNumeric($('#strengthBaseStatus'), comparisionJson.strengthBaseComparision);
+    AddComparingStyleToNumeric($('#agilityBaseStatus'), comparisionJson.agilityBaseComparision);
+    AddComparingStyleToNumeric($('#intelligenceBaseStatus'), comparisionJson.intelligenceBaseComparision);
+    AddComparingStyleToNumeric($('#heraldWinrateStatus'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Herald").winrateComparision);
+    AddComparingStyleToNumeric($('#legendWinrateStatus'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Legend").winrateComparision);
+    AddComparingStyleToNumeric($('#immortalWinrateStatus'), comparisionJson.weekWinratesComparision.find(w => w.rankBracket === "Immortal").winrateComparision);
     comparisionJson.rolesComparision.forEach(role => {
-        AddComparingStyle($(`#${role.name}`), role.levelComparision)
+        AddComparingStyleToProgress($(`#${role.name}Status`), role.levelComparision)
     });
 }
 
-function AddComparingStyle(element, comparisionValue) {
-    if (comparisionValue > 0) {
+function AddComparingStyleToProgress(element, comparisionValue) {
+    if (comparisionValue !== 0) {
         element.addClass('bg-danger');
-    } else if (comparisionValue < 0) {
-        element.addClass('bg-danger-subtle');
     } else {
         element.addClass('bg-success');
+    }
+}
+
+function AddComparingStyleToBool(element, comparisionValue) {
+    if (comparisionValue === true) {
+        element.attr('src', 'Images/ComparingSymbols/check.png');
+    } else {
+        element.attr('src', 'Images/ComparingSymbols/cross.png');
+    }
+}
+
+function AddComparingStyleToNumeric(element, comparisionValue) {
+    if (comparisionValue < 0) {
+        element.attr('src', 'Images/ComparingSymbols/down.png');
+    } else if (comparisionValue > 0) {
+        element.attr('src', 'Images/ComparingSymbols/up.png');
+    } else {
+        element.attr('src', 'Images/ComparingSymbols/check.png');
     }
 }
 
@@ -202,10 +233,13 @@ $(document).ready(function () {
             success: function (response) {
                 const hero = response.hero;
                 const heroComparision = response.comparision;
+                
+                console.log(hero);
+                console.log(heroComparision);
 
                 const newHeroElement = CreateHeroCard(hero);
                 $('.cards-container').prepend(newHeroElement);
-                // AddComparingStylesToHeroCard(newHeroElement, heroComparision);
+                AddComparingStylesToHeroCard(newHeroElement, heroComparision);
             },
             error: function (xhr, status, error) {
                 alert('Произошла ошибка при выборе героя.');
