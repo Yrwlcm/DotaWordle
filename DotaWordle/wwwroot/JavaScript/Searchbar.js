@@ -171,52 +171,41 @@ function AddComparingStyleToNumeric(element, comparisionValue) {
     }
 }
 
+function FilterHeroes(heroes, filter, hiddenHeroesIds) {
+    let resultHeroes = heroes;
+
+    if (filter) {
+        resultHeroes = resultHeroes.filter(function () {
+            return $(this).find('span').text().toLowerCase().indexOf(filter) > -1;
+        });
+    }
+
+    resultHeroes = resultHeroes.filter(function () {
+        return !hiddenHeroesIds.includes($(this).data('id'));
+    });
+
+    return resultHeroes;
+}
+
+function DisplayHeroes(results, items, filter, hiddenHeroes) {
+    let heroes = FilterHeroes(items, filter, hiddenHeroes);
+    items.hide();
+    heroes.show();
+    results.show();
+}
+
+
 $(document).ready(function () {
     const results = $('#results');
     const items = results.find('.result-item');
     let heroesChosen = 0;
+    let hiddenHeroes = [];
 
     // Показать всех героев при фокусе на поле ввода, если поле пустое
     $('#search-input').on('focus', function () {
         const filter = $(this).val().toLowerCase();
-        if (filter) {
-            filterHeroes(filter);
-        } else {
-            results.show();
-            items.show();
-        }
+        DisplayHeroes(results, items, filter, hiddenHeroes);
     });
-
-    // Фильтрация героев при вводе текста
-    $('#search-input').on('input', function () {
-        const filter = $(this).val().toLowerCase();
-        if (filter) {
-            filterHeroes(filter);
-        } else {
-            results.show();
-            items.show();
-        }
-    });
-
-    // Функция фильтрации героев
-    function filterHeroes(filter) {
-        if (filter) {
-            results.show();
-            let count = 0;
-            items.each(function () {
-                const item = $(this);
-                const text = item.find('span').text().toLowerCase();
-                if (text.indexOf(filter) > -1 && count < 5) {
-                    item.show();
-                    count++;
-                } else {
-                    item.hide();
-                }
-            });
-        } else {
-            results.hide();
-        }
-    }
 
     // Скрыть результаты при клике вне области поиска
     $(document).on('click', function (e) {
@@ -225,10 +214,17 @@ $(document).ready(function () {
         }
     });
 
+    // Фильтрация героев при вводе текста
+    $('#search-input').on('input', function () {
+        const filter = $(this).val().toLowerCase();
+        DisplayHeroes(results, items, filter, hiddenHeroes);
+    });
+
     // Post запрос для сравнения героев
     items.on('click', function () {
         const heroId = $(this).data('id');
         const antiForgeryToken = $('input[name="__RequestVerificationToken"]').val();
+        hiddenHeroes.push(heroId);
 
         $.ajax({
             url: `api/heroes/compare/hiddenHero/${heroId}`,
@@ -239,17 +235,17 @@ $(document).ready(function () {
             success: function (response) {
                 const hero = response.hero;
                 const heroComparision = response.comparision;
-                
+
                 console.log(hero);
                 console.log(heroComparision);
 
                 const newHeroElement = CreateHeroCard(hero);
                 $('.cards-container').prepend(newHeroElement);
                 AddComparingStylesToHeroCard(newHeroElement, heroComparision);
-                
+
                 heroesChosen++;
                 $('.clicks-count').text(heroesChosen);
-                
+
                 if (heroComparision.comparedHeroName === heroComparision.heroName) {
                     $('#successModal').modal('show');
                 }
@@ -258,5 +254,7 @@ $(document).ready(function () {
                 alert('Произошла ошибка при выборе героя.');
             }
         });
+
+        DisplayHeroes(results, items, '', hiddenHeroes);
     });
 });
