@@ -174,6 +174,7 @@ function AddComparingStyleToNumeric(element, comparisionValue) {
 $(document).ready(function () {
     const results = $('#results');
     const items = results.find('.result-item');
+    let heroesChosen = 0;
 
     // Показать всех героев при фокусе на поле ввода, если поле пустое
     $('#search-input').on('focus', function () {
@@ -189,7 +190,12 @@ $(document).ready(function () {
     // Фильтрация героев при вводе текста
     $('#search-input').on('input', function () {
         const filter = $(this).val().toLowerCase();
-        filterHeroes(filter);
+        if (filter) {
+            filterHeroes(filter);
+        } else {
+            results.show();
+            items.show();
+        }
     });
 
     // Функция фильтрации героев
@@ -240,6 +246,13 @@ $(document).ready(function () {
                 const newHeroElement = CreateHeroCard(hero);
                 $('.cards-container').prepend(newHeroElement);
                 AddComparingStylesToHeroCard(newHeroElement, heroComparision);
+                
+                heroesChosen++;
+                $('.clicks-count').text(heroesChosen);
+                
+                if (heroComparision.comparedHeroName === heroComparision.heroName) {
+                    $('#successModal').modal('show');
+                }
             },
             error: function (xhr, status, error) {
                 alert('Произошла ошибка при выборе героя.');

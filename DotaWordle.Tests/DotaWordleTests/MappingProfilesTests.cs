@@ -59,13 +59,13 @@ public class MappingProfilesTests
     public void RoleProfileShouldMapCorrectly()
     {
         var resultRoles = mapper.Map<List<Role>>(roleEntitiesExamples);
-        
+
         var expectedRoles = new List<Role>
         {
             new() { Name = "Carry", Level = 3 },
             new() { Name = "Escape", Level = 2 },
         };
-        
+
         resultRoles.Should().BeEquivalentTo(expectedRoles);
     }
 
@@ -73,13 +73,13 @@ public class MappingProfilesTests
     public void WinrateProfileShouldMapCorrectly()
     {
         var resultWinrates = mapper.Map<List<HeroWinrate>>(winrateEntityExamples);
-        
+
         var expectedWinrates = new List<HeroWinrate>
         {
             new() { RankBracket = "Herald", Winrate = 55 },
             new() { RankBracket = "Legend", Winrate = 35 },
         };
-        
+
         resultWinrates.Should().BeEquivalentTo(expectedWinrates);
     }
 
@@ -87,7 +87,7 @@ public class MappingProfilesTests
     public void HeroProfileShouldMapCorrectly_WithoutWinratesAndRoles()
     {
         var resultHero = mapper.Map<Hero>(heroEntityExample);
-        
+
         var expectedHero = new Hero
         {
             Id = 1,
@@ -96,7 +96,7 @@ public class MappingProfilesTests
             AttackRange = 150,
             AgilityBase = 23,
         };
-        
+
         resultHero.Should()
             .BeEquivalentTo(expectedHero, o => o.Excluding(x => x.WeekWinrates).Excluding(x => x.Roles));
     }
@@ -108,9 +108,9 @@ public class MappingProfilesTests
         {
             WeekWinrates = winrateEntityExamples, Roles = roleEntitiesExamples
         };
-        
+
         var resultHero = mapper.Map<Hero>(fullHeroEntity);
-        
+
         var expectedHero = new Hero
         {
             Id = 1,
@@ -118,11 +118,18 @@ public class MappingProfilesTests
             PrimaryAttributeName = "Agility",
             AttackRange = 150,
             AgilityBase = 23,
-            Roles = new List<Role> { new() { Name = "Carry", Level = 3 }, new() { Name = "Escape", Level = 2 } },
+            Roles = new List<Role>
+            {
+                new() { Name = "Carry", Level = 3 }, new() { Name = "Escape", Level = 2 },
+                new() { Name = "Disabler", Level = 0, }, new() { Name = "Durable", Level = 0, },
+                new() { Name = "Initiator", Level = 0, }, new() { Name = "Jungler", Level = 0, },
+                new() { Name = "Nuker", Level = 0, }, new() { Name = "Pusher", Level = 0, },
+                new() { Name = "Support", Level = 0, },
+            },
             WeekWinrates = new List<HeroWinrate>
                 { new() { RankBracket = "Herald", Winrate = 55 }, new() { RankBracket = "Legend", Winrate = 35 } },
         };
-        
+
         resultHero.Should().BeEquivalentTo(expectedHero);
     }
 }

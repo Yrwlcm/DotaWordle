@@ -7,7 +7,7 @@
         @foreach (var hero in Model.Heroes)
         {
             <div class="result-item" data-id="@hero.Id">
-                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(hero.Name.Replace(" ", "_").ToLower()).png" alt="hero.Name">
+                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(hero.Name.Replace(" ", "_").ToLower()).png" alt="@hero.Name">
                 <span>@hero.Name</span>
             </div>
         }
@@ -17,6 +17,23 @@
 <div class="cards-container">
 </div>
 
-@Html.AntiForgeryToken()
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Поздравляем!</h5>
+            </div>
+            <div class="modal-body">
+                <p>Вы угадали героя!</p>
+                <p>Количество попыток: <span class="clicks-count"></span></p>
+            </div>
+            <div class="modal-footer">
+                <form method="post" asp-page-handler="RestartGame">
+                    <button class="btn btn-primary" data-dismiss="modal">Играть снова</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="JavaScript/Searchbar.js"></script>

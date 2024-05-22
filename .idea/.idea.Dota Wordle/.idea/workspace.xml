@@ -11,7 +11,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="" />
+    <list default="true" id="6d211741-6c03-46aa-95c7-974c0f45f7ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordleTests/RandomHeroGeneratorTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Logic/IRandomHeroGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotaWordle/Logic/RandomHeroGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dota Wordle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordle.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordleTests/MappingProfilesTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle.Tests/DotaWordleTests/MappingProfilesTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Controllers/HeroesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Controllers/HeroesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Guess.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/DotaWordle/wwwroot/JavaScript/Searchbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +78,10 @@
     <setting file="file://$PROJECT_DIR$/DotaWordle.DataParser/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/DataParserTests/HeroConverterTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotaWordle.Tests/obj/Debug/net8.0/Verify.Attributes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Controllers/HeroesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Guess.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Guess.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/Dota Wordle/Dota Wordle/DotaWordle/Pages/Index.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InfoParser/Worker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -80,35 +97,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Dota Wordle: https.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.DataParser.executor&quot;: &quot;Run&quot;,
-    &quot;895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor&quot;: &quot;Debug&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.50059736&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Dota Wordle: https.executor": "Run",
+    ".NET Project.DataParser.executor": "Run",
+    "895e82fe-aac7-4337-bcb3-e4a0004d32d1.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.50059736",
+    "git-widget-placeholder": "master",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Markdown&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\user\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\user\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\user\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Dota Wordle: https">
     <configuration name="DataParser" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -253,6 +270,9 @@
       <workItem from="1716143387956" duration="97000" />
       <workItem from="1716223656474" duration="2054000" />
       <workItem from="1716225803319" duration="298000" />
+      <workItem from="1716291989300" duration="7798000" />
+      <workItem from="1716315024522" duration="282000" />
+      <workItem from="1716362620943" duration="6570000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -430,7 +450,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716226080774</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Removed red borders and added nice ui for comparision">
+      <option name="closed" value="true" />
+      <created>1716304015236</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716304015236</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Removed red borders and added nice ui for comparision">
+      <option name="closed" value="true" />
+      <created>1716304037104</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716304037104</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +505,8 @@
     <MESSAGE value="Search bar to select hero and compare it" />
     <MESSAGE value="Stats highlight prototype" />
     <MESSAGE value="Ranks to images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ranks to images" />
+    <MESSAGE value="Removed red borders and added nice ui for comparision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed red borders and added nice ui for comparision" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,10 +548,10 @@
           <line>99</line>
           <properties documentPath="G:\Dota Wordle\Dota Wordle\DotaWordle.Tests\DotaWordleTests\MappingProfilesTests.cs" containingFunctionPresentation="Method 'HeroProfileShouldMapCorrectly'">
             <startOffsets>
-              <option value="2968" />
+              <option value="2920" />
             </startOffsets>
             <endOffsets>
-              <option value="3035" />
+              <option value="2987" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="23" />

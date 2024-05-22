@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DotaWordle.Pages;
 
-public class Guess(IHeroParametersComparer heroComparer, IHeroRepository heroRepository) : PageModel
+public class Guess(IHeroRepository heroRepository, IRandomHeroGenerator randomHeroGenerator) : PageModel
 {
     public Hero HiddenHero { get; set; }
 
@@ -29,5 +29,14 @@ public class Guess(IHeroParametersComparer heroComparer, IHeroRepository heroRep
         HiddenHero = heroRepository.GetHeroById(hiddenHeroNumber.Value);
 
         return Page();
+    }
+
+    public IActionResult OnPostRestartGame()
+    {
+        var heroId = randomHeroGenerator.GetRandomHero();
+        
+        HttpContext.Session.SetInt32("hiddenHeroId", heroId);
+        
+        return RedirectToPage("Guess");
     }
 }

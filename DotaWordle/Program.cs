@@ -23,8 +23,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<HeroesDbContext>();
 
 builder.Services.AddScoped<IHeroParametersComparer, HeroParametersComparer>();
-
 builder.Services.AddScoped<IHeroRepository, HeroRepository>();
+builder.Services.AddScoped<IRandomHeroGenerator, RandomHeroGenerator>();
 
 var app = builder.Build();
 

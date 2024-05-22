@@ -9,7 +9,7 @@ namespace DotaWordle.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class HeroesController(IHeroParametersComparer comparer, IHeroRepository heroRepository)
+public class HeroesController(IHeroParametersComparer comparer, IHeroRepository heroRepository, IRandomHeroGenerator randomHeroGenerator)
     : ControllerBase
 {
     private static readonly Random random = new();
@@ -47,10 +47,8 @@ public class HeroesController(IHeroParametersComparer comparer, IHeroRepository 
     [HttpPost("generate/hiddenhero")]
     public ActionResult GenerateHiddenHero()
     {
-        var heroIds = heroRepository.GetHeroes().Select(hero => hero.Id).OrderBy(id => id).ToList();
-        var randomId = random.Next(heroIds.Count);
-        var heroId = heroIds[randomId];
-
+        var heroId = randomHeroGenerator.GetRandomHero();
+        
         HttpContext.Session.SetInt32("hiddenHeroId", heroId);
 
         return Ok(new { hiddenHeroId = heroId });
