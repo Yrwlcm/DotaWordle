@@ -3,11 +3,11 @@
         <div class="card card-custom hero-card">
             <div class="row g-0 mx-5 my-3 text-center flex-row align-items-center justify-content-center ">
                 <div class="col-md-3 d-flex align-items-center justify-content-center">
-                    <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${heroData.name.replace(/ /g, "_").toLowerCase()}.png"
+                    <img src="Images/Heroes/${heroData.name}.png"
                          class="img-fluid rounded-start" alt="${heroData.name}">
                 </div>
                 <div class="col-md-1 d-flex align-items-center justify-content-center">
-                    <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_${heroData.primaryAttributeName.toLowerCase()}.png"
+                    <img src="Images/Attributes/${heroData.primaryAttributeName}.png"
                          class="img-fluid rounded-start" alt="${heroData.primaryAttributeName}"
                          style="width: 60px;">
                          
@@ -58,19 +58,19 @@
                             <img id="complexityStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item" >
-                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png"
+                            <img src="Images/Attributes/Strength.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.strengthBase}
                             <img id="strengthBaseStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item" >
-                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png"
+                            <img src="Images/Attributes/Agility.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.agilityBase}
                             <img id="agilityBaseStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item" >
-                            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png"
+                            <img src="Images/Attributes/Intelligence.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
                             ${heroData.intelligenceBase}
                             <img id="intelligenceBaseStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">

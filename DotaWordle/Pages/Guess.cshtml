@@ -7,7 +7,9 @@
         @foreach (var hero in Model.Heroes)
         {
             <div class="result-item" data-id="@hero.Id">
-                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/@(hero.Name.Replace(" ", "_").ToLower()).png" alt="@hero.Name">
+                <img src="Images/Attributes/@(hero.PrimaryAttributeName).png" alt="@hero.PrimaryAttributeName)"
+                     style="width: 30px; height: 30px;"/>
+                <img src="Images/Heroes/@(hero.Name).png" alt="@hero.Name">
                 <span>@hero.Name</span>
             </div>
         }

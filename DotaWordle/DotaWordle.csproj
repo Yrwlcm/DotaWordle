@@ -27,4 +27,9 @@
       <ProjectReference Include="..\DotaWordle.DataAcess.Postgres\DotaWordle.DataAcess.Postgres.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\Images\Attributes\" />
+      <Folder Include="wwwroot\Images\Heroes\" />
+    </ItemGroup>
+
 </Project>
