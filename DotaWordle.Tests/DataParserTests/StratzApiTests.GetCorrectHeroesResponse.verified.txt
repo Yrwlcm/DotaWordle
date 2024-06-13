@@ -5,7 +5,7 @@
         {
           id: 1,
           displayName: Anti-Mage,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -37,7 +37,7 @@
         {
           id: 2,
           displayName: Axe,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -73,7 +73,7 @@
         {
           id: 3,
           displayName: Bane,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -109,7 +109,7 @@
         {
           id: 4,
           displayName: Bloodseeker,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -138,14 +138,14 @@
             strengthBase: 24,
             agilityBase: 24,
             intelligenceBase: 17,
-            moveSpeed: 300,
+            moveSpeed: 285,
             complexity: 1
           }
         },
         {
           id: 5,
           displayName: Crystal Maiden,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -177,7 +177,7 @@
         {
           id: 6,
           displayName: Drow Ranger,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -202,14 +202,14 @@
             strengthBase: 16,
             agilityBase: 20,
             intelligenceBase: 15,
-            moveSpeed: 300,
+            moveSpeed: 310,
             complexity: 1
           }
         },
         {
           id: 7,
           displayName: Earthshaker,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -245,7 +245,7 @@
         {
           id: 8,
           displayName: Juggernaut,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -277,7 +277,7 @@
         {
           id: 9,
           displayName: Mirana,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -317,7 +317,7 @@
         {
           id: 10,
           displayName: Morphling,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -357,7 +357,7 @@
         {
           id: 11,
           displayName: Shadow Fiend,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -385,7 +385,7 @@
         {
           id: 12,
           displayName: Phantom Lancer,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -406,7 +406,7 @@
           ],
           stats: {
             attackType: Melee,
-            startingArmor: 3.3333334922790527,
+            startingArmor: 4.333333492279053,
             startingDamageMin: 52,
             startingDamageMax: 62,
             attackRange: 225,
@@ -421,7 +421,7 @@
         {
           id: 13,
           displayName: Puck,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -442,13 +442,13 @@
           ],
           stats: {
             attackType: Ranged,
-            startingArmor: 0.6666667461395264,
+            startingArmor: 2.3333334922790527,
             startingDamageMin: 45,
             startingDamageMax: 53,
             attackRange: 550,
             primaryAttribute: int,
             strengthBase: 17,
-            agilityBase: 22,
+            agilityBase: 14,
             intelligenceBase: 23,
             moveSpeed: 290,
             complexity: 2
@@ -457,7 +457,7 @@
         {
           id: 14,
           displayName: Pudge,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -478,13 +478,13 @@
           ],
           stats: {
             attackType: Melee,
-            startingArmor: 1.3333334922790527,
+            startingArmor: 1.8333333730697632,
             startingDamageMin: 70,
             startingDamageMax: 76,
             attackRange: 175,
             primaryAttribute: str,
             strengthBase: 25,
-            agilityBase: 14,
+            agilityBase: 11,
             intelligenceBase: 16,
             moveSpeed: 280,
             complexity: 2
@@ -493,7 +493,7 @@
         {
           id: 15,
           displayName: Razor,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -529,7 +529,7 @@
         {
           id: 16,
           displayName: Sand King,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -569,7 +569,7 @@
         {
           id: 17,
           displayName: Storm Spirit,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -609,7 +609,7 @@
         {
           id: 18,
           displayName: Sven,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -649,7 +649,7 @@
         {
           id: 19,
           displayName: Tiny,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -693,7 +693,7 @@
         {
           id: 20,
           displayName: Vengeful Spirit,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -733,7 +733,7 @@
         {
           id: 21,
           displayName: Windranger,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -773,7 +773,7 @@
         {
           id: 22,
           displayName: Zeus,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -801,7 +801,7 @@
         {
           id: 23,
           displayName: Kunkka,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -845,7 +845,7 @@
         {
           id: 25,
           displayName: Lina,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -881,7 +881,7 @@
         {
           id: 26,
           displayName: Lion,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -917,7 +917,7 @@
         {
           id: 27,
           displayName: Shadow Shaman,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -957,7 +957,7 @@
         {
           id: 28,
           displayName: Slardar,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -997,7 +997,7 @@
         {
           id: 29,
           displayName: Tidehunter,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1037,7 +1037,7 @@
         {
           id: 30,
           displayName: Witch Doctor,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1069,7 +1069,7 @@
         {
           id: 31,
           displayName: Lich,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1097,7 +1097,7 @@
         {
           id: 32,
           displayName: Riki,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1115,8 +1115,8 @@
           stats: {
             attackType: Melee,
             startingArmor: 5,
-            startingDamageMin: 57,
-            startingDamageMax: 61,
+            startingDamageMin: 52,
+            startingDamageMax: 56,
             attackRange: 150,
             primaryAttribute: agi,
             strengthBase: 18,
@@ -1129,7 +1129,7 @@
         {
           id: 33,
           displayName: Enigma,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: INITIATOR,
@@ -1161,7 +1161,7 @@
         {
           id: 34,
           displayName: Tinker,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1186,14 +1186,14 @@
             strengthBase: 19,
             agilityBase: 17,
             intelligenceBase: 30,
-            moveSpeed: 290,
+            moveSpeed: 310,
             complexity: 2
           }
         },
         {
           id: 35,
           displayName: Sniper,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1221,7 +1221,7 @@
         {
           id: 36,
           displayName: Necrophos,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1257,7 +1257,7 @@
         {
           id: 37,
           displayName: Warlock,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: INITIATOR,
@@ -1289,7 +1289,7 @@
         {
           id: 38,
           displayName: Beastmaster,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1310,13 +1310,13 @@
           ],
           stats: {
             attackType: Melee,
-            startingArmor: 2,
+            startingArmor: 2.6666667461395264,
             startingDamageMin: 5,
             startingDamageMax: 9,
             attackRange: 150,
             primaryAttribute: all,
             strengthBase: 25,
-            agilityBase: 18,
+            agilityBase: 22,
             intelligenceBase: 16,
             moveSpeed: 305,
             complexity: 2
@@ -1325,7 +1325,7 @@
         {
           id: 39,
           displayName: Queen of Pain,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1357,7 +1357,7 @@
         {
           id: 40,
           displayName: Venomancer,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1397,7 +1397,7 @@
         {
           id: 41,
           displayName: Faceless Void,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1437,7 +1437,7 @@
         {
           id: 42,
           displayName: Wraith King,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1477,7 +1477,7 @@
         {
           id: 43,
           displayName: Death Prophet,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1513,7 +1513,7 @@
         {
           id: 44,
           displayName: Phantom Assassin,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1527,8 +1527,8 @@
           stats: {
             attackType: Melee,
             startingArmor: 4.5,
-            startingDamageMin: 52,
-            startingDamageMax: 54,
+            startingDamageMin: 54,
+            startingDamageMax: 56,
             attackRange: 150,
             primaryAttribute: agi,
             strengthBase: 19,
@@ -1541,7 +1541,7 @@
         {
           id: 45,
           displayName: Pugna,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1569,7 +1569,7 @@
         {
           id: 46,
           displayName: Templar Assassin,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1585,7 +1585,7 @@
             startingArmor: 3.8333334922790527,
             startingDamageMin: 53,
             startingDamageMax: 59,
-            attackRange: 200,
+            attackRange: 250,
             primaryAttribute: agi,
             strengthBase: 23,
             agilityBase: 23,
@@ -1597,7 +1597,7 @@
         {
           id: 47,
           displayName: Viper,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1633,7 +1633,7 @@
         {
           id: 48,
           displayName: Luna,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1665,7 +1665,7 @@
         {
           id: 49,
           displayName: Dragon Knight,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1709,7 +1709,7 @@
         {
           id: 50,
           displayName: Dazzle,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1741,7 +1741,7 @@
         {
           id: 51,
           displayName: Clockwerk,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1777,7 +1777,7 @@
         {
           id: 52,
           displayName: Leshrac,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1808,7 +1808,7 @@
             attackRange: 575,
             primaryAttribute: int,
             strengthBase: 20,
-            agilityBase: 23,
+            agilityBase: 17,
             intelligenceBase: 22,
             moveSpeed: 325,
             complexity: 1
@@ -1817,7 +1817,7 @@
         {
           id: 53,
           displayName: Nature's Prophet,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1839,8 +1839,8 @@
           stats: {
             attackType: Ranged,
             startingArmor: 2.3333334922790527,
-            startingDamageMin: 46,
-            startingDamageMax: 56,
+            startingDamageMin: 40,
+            startingDamageMax: 50,
             attackRange: 620,
             primaryAttribute: int,
             strengthBase: 19,
@@ -1853,7 +1853,7 @@
         {
           id: 54,
           displayName: Lifestealer,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1875,8 +1875,8 @@
           stats: {
             attackType: Melee,
             startingArmor: 4.1666669845581055,
-            startingDamageMin: 47,
-            startingDamageMax: 53,
+            startingDamageMin: 41,
+            startingDamageMax: 47,
             attackRange: 150,
             primaryAttribute: str,
             strengthBase: 25,
@@ -1889,7 +1889,7 @@
         {
           id: 55,
           displayName: Dark Seer,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -1921,7 +1921,7 @@
         {
           id: 56,
           displayName: Clinkz,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -1953,7 +1953,7 @@
         {
           id: 57,
           displayName: Omniknight,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -1985,7 +1985,7 @@
         {
           id: 58,
           displayName: Enchantress,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: DURABLE,
@@ -2021,7 +2021,7 @@
         {
           id: 59,
           displayName: Huskar,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2053,7 +2053,7 @@
         {
           id: 60,
           displayName: Night Stalker,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2093,7 +2093,7 @@
         {
           id: 61,
           displayName: Broodmother,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2129,7 +2129,7 @@
         {
           id: 62,
           displayName: Bounty Hunter,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -2157,7 +2157,7 @@
         {
           id: 63,
           displayName: Weaver,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2185,7 +2185,7 @@
         {
           id: 64,
           displayName: Jakiro,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -2221,7 +2221,7 @@
         {
           id: 65,
           displayName: Batrider,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -2253,7 +2253,7 @@
         {
           id: 66,
           displayName: Chen,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: SUPPORT,
@@ -2281,7 +2281,7 @@
         {
           id: 67,
           displayName: Spectre,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2313,7 +2313,7 @@
         {
           id: 68,
           displayName: Ancient Apparition,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -2345,7 +2345,7 @@
         {
           id: 69,
           displayName: Doom,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2371,8 +2371,8 @@
           stats: {
             attackType: Melee,
             startingArmor: 4.5,
-            startingDamageMin: 58,
-            startingDamageMax: 68,
+            startingDamageMin: 56,
+            startingDamageMax: 66,
             attackRange: 200,
             primaryAttribute: str,
             strengthBase: 24,
@@ -2385,7 +2385,7 @@
         {
           id: 70,
           displayName: Ursa,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2417,7 +2417,7 @@
         {
           id: 71,
           displayName: Spirit Breaker,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2445,7 +2445,7 @@
             startingArmor: 3.8333334922790527,
             startingDamageMin: 59,
             startingDamageMax: 69,
-            attackRange: 150,
+            attackRange: 170,
             primaryAttribute: str,
             strengthBase: 28,
             agilityBase: 17,
@@ -2457,7 +2457,7 @@
         {
           id: 72,
           displayName: Gyrocopter,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2489,7 +2489,7 @@
         {
           id: 73,
           displayName: Alchemist,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2533,7 +2533,7 @@
         {
           id: 74,
           displayName: Invoker,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2573,7 +2573,7 @@
         {
           id: 75,
           displayName: Silencer,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2613,7 +2613,7 @@
         {
           id: 76,
           displayName: Outworld Destroyer,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2638,14 +2638,14 @@
             strengthBase: 21,
             agilityBase: 22,
             intelligenceBase: 30,
-            moveSpeed: 320,
+            moveSpeed: 315,
             complexity: 2
           }
         },
         {
           id: 77,
           displayName: Lycan,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2681,7 +2681,7 @@
         {
           id: 78,
           displayName: Brewmaster,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2721,7 +2721,7 @@
         {
           id: 79,
           displayName: Shadow Demon,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -2757,7 +2757,7 @@
         {
           id: 80,
           displayName: Lone Druid,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2789,7 +2789,7 @@
         {
           id: 81,
           displayName: Chaos Knight,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2829,7 +2829,7 @@
         {
           id: 82,
           displayName: Meepo,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -2873,7 +2873,7 @@
         {
           id: 83,
           displayName: Treant Protector,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -2913,7 +2913,7 @@
         {
           id: 84,
           displayName: Ogre Magi,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -2953,7 +2953,7 @@
         {
           id: 85,
           displayName: Undying,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -2989,7 +2989,7 @@
         {
           id: 86,
           displayName: Rubick,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3021,7 +3021,7 @@
         {
           id: 87,
           displayName: Disruptor,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3057,7 +3057,7 @@
         {
           id: 88,
           displayName: Nyx Assassin,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3079,8 +3079,8 @@
           stats: {
             attackType: Melee,
             startingArmor: 4,
-            startingDamageMin: 9,
-            startingDamageMax: 13,
+            startingDamageMin: 12,
+            startingDamageMax: 16,
             attackRange: 150,
             primaryAttribute: all,
             strengthBase: 17,
@@ -3093,7 +3093,7 @@
         {
           id: 89,
           displayName: Naga Siren,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3137,7 +3137,7 @@
         {
           id: 90,
           displayName: Keeper of the Light,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3169,7 +3169,7 @@
         {
           id: 91,
           displayName: Io,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3201,7 +3201,7 @@
         {
           id: 92,
           displayName: Visage,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3226,7 +3226,7 @@
           ],
           stats: {
             attackType: Ranged,
-            startingArmor: 0.8333333730697632,
+            startingArmor: 1.8333333730697632,
             startingDamageMin: 4,
             startingDamageMax: 14,
             attackRange: 600,
@@ -3241,7 +3241,7 @@
         {
           id: 93,
           displayName: Slark,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3277,7 +3277,7 @@
         {
           id: 94,
           displayName: Medusa,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3309,7 +3309,7 @@
         {
           id: 95,
           displayName: Troll Warlord,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3345,7 +3345,7 @@
         {
           id: 96,
           displayName: Centaur Warrunner,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3378,14 +3378,14 @@
             strengthBase: 27,
             agilityBase: 15,
             intelligenceBase: 15,
-            moveSpeed: 310,
+            moveSpeed: 305,
             complexity: 1
           }
         },
         {
           id: 97,
           displayName: Magnus,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3421,7 +3421,7 @@
         {
           id: 98,
           displayName: Timbersaw,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3439,10 +3439,10 @@
           stats: {
             attackType: Melee,
             startingArmor: 2.6666667461395264,
-            startingDamageMin: 4,
-            startingDamageMax: 8,
+            startingDamageMin: 50,
+            startingDamageMax: 54,
             attackRange: 150,
-            primaryAttribute: all,
+            primaryAttribute: str,
             strengthBase: 27,
             agilityBase: 16,
             intelligenceBase: 23,
@@ -3453,7 +3453,7 @@
         {
           id: 99,
           displayName: Bristleback,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3475,8 +3475,8 @@
           stats: {
             attackType: Melee,
             startingArmor: 3.8333334922790527,
-            startingDamageMin: 55,
-            startingDamageMax: 61,
+            startingDamageMin: 47,
+            startingDamageMax: 53,
             attackRange: 150,
             primaryAttribute: str,
             strengthBase: 22,
@@ -3489,7 +3489,7 @@
         {
           id: 100,
           displayName: Tusk,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3521,7 +3521,7 @@
         {
           id: 101,
           displayName: Skywrath Mage,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3553,7 +3553,7 @@
         {
           id: 102,
           displayName: Abaddon,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3571,8 +3571,8 @@
           stats: {
             attackType: Melee,
             startingArmor: 3.8333334922790527,
-            startingDamageMin: 2,
-            startingDamageMax: 12,
+            startingDamageMin: -4,
+            startingDamageMax: 6,
             attackRange: 150,
             primaryAttribute: all,
             strengthBase: 22,
@@ -3585,7 +3585,7 @@
         {
           id: 103,
           displayName: Elder Titan,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3621,7 +3621,7 @@
         {
           id: 104,
           displayName: Legion Commander,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3661,7 +3661,7 @@
         {
           id: 105,
           displayName: Techies,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3677,7 +3677,7 @@
             startingArmor: 4.333333492279053,
             startingDamageMin: 3,
             startingDamageMax: 5,
-            attackRange: 700,
+            attackRange: 550,
             primaryAttribute: all,
             strengthBase: 19,
             agilityBase: 14,
@@ -3689,7 +3689,7 @@
         {
           id: 106,
           displayName: Ember Spirit,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3729,7 +3729,7 @@
         {
           id: 107,
           displayName: Earth Spirit,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3769,7 +3769,7 @@
         {
           id: 108,
           displayName: Underlord,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3809,7 +3809,7 @@
         {
           id: 109,
           displayName: Terrorblade,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3841,7 +3841,7 @@
         {
           id: 110,
           displayName: Phoenix,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3881,7 +3881,7 @@
         {
           id: 111,
           displayName: Oracle,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -3917,7 +3917,7 @@
         {
           id: 112,
           displayName: Winter Wyvern,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: NUKER,
@@ -3935,8 +3935,8 @@
           stats: {
             attackType: Ranged,
             startingArmor: 3.6666667461395264,
-            startingDamageMin: -4,
-            startingDamageMax: 1,
+            startingDamageMin: -1,
+            startingDamageMax: 4,
             attackRange: 425,
             primaryAttribute: all,
             strengthBase: 20,
@@ -3949,7 +3949,7 @@
         {
           id: 113,
           displayName: Arc Warden,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -3981,7 +3981,7 @@
         {
           id: 114,
           displayName: Monkey King,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -4017,7 +4017,7 @@
         {
           id: 119,
           displayName: Dark Willow,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -4053,7 +4053,7 @@
         {
           id: 120,
           displayName: Pangolier,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -4097,7 +4097,7 @@
         {
           id: 121,
           displayName: Grimstroke,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -4133,7 +4133,7 @@
         {
           id: 123,
           displayName: Hoodwink,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -4169,7 +4169,7 @@
         {
           id: 126,
           displayName: Void Spirit,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -4205,7 +4205,7 @@
         {
           id: 128,
           displayName: Snapfire,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: ESCAPE,
@@ -4227,9 +4227,9 @@
           stats: {
             attackType: Ranged,
             startingArmor: 3.6666667461395264,
-            startingDamageMin: 4,
-            startingDamageMax: 10,
-            attackRange: 500,
+            startingDamageMin: 8,
+            startingDamageMax: 14,
+            attackRange: 400,
             primaryAttribute: all,
             strengthBase: 21,
             agilityBase: 16,
@@ -4241,7 +4241,7 @@
         {
           id: 129,
           displayName: Mars,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -4277,7 +4277,7 @@
         {
           id: 135,
           displayName: Dawnbreaker,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -4305,7 +4305,7 @@
         {
           id: 136,
           displayName: Marci,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,
@@ -4345,7 +4345,7 @@
         {
           id: 137,
           displayName: Primal Beast,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: INITIATOR,
@@ -4377,7 +4377,7 @@
         {
           id: 138,
           displayName: Muerta,
-          gameVersionId: 172,
+          gameVersionId: 173,
           roles: [
             {
               roleId: CARRY,

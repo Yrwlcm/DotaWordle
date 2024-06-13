@@ -7,9 +7,11 @@ using Newtonsoft.Json.Linq;
 
 namespace DataParser;
 
-public static class StratzApi
+public class StratzApiParser : IDisposable, IHeroesStatisicsParser
 {
-    public static async Task<List<HeroEntity>> ParseAllHeroes(HttpClient client)
+    private readonly HttpClient Client = new();
+
+    public async Task<List<HeroEntity>> ParseAllHeroesAsync()
     {
         const string query = """
                              {
@@ -40,7 +42,7 @@ public static class StratzApi
                              }
                              """;
 
-        var responce = await SendStratzGraphQLRequest(client, query);
+        var responce = await SendStratzGraphQLRequest(query);
         var jsonString = await responce.Content.ReadAsStringAsync();
 
         var responseTokens = JObject.Parse(jsonString);
@@ -57,26 +59,25 @@ public static class StratzApi
         return heroesList;
     }
 
-    public static async Task<List<List<HeroWeekWinrateEntity>>> ParseAllHeroesWeekWinrates(HttpClient client,
-        RankBracket[] rankBrackets)
+    public async Task<List<List<HeroWeekWinrateEntity>>> ParseAllHeroesWeekWinratesAsync(RankBracket[] rankBrackets)
     {
         var winrates = new List<List<HeroWeekWinrateEntity>>();
 
         foreach (var rankBracket in rankBrackets)
         {
-            winrates.Add(await ParseAllHeroesWeekWinrates(client, rankBracket));
+            winrates.Add(await ParseAllHeroesWeekWinratesAsync(rankBracket));
         }
 
         return winrates;
     }
 
-    public static async Task<List<HeroWeekWinrateEntity>> ParseAllHeroesWeekWinrates(HttpClient client,
-        RankBracket rankBracket)
+    public async Task<List<HeroWeekWinrateEntity>> ParseAllHeroesWeekWinratesAsync(RankBracket rankBracket)
     {
         var rankSearch = rankBracket.ToString().ToUpperInvariant();
-        rankSearch = rankSearch.Equals(RankBracket.All.ToString(), StringComparison.InvariantCultureIgnoreCase) 
-            ? "" : rankSearch;
-        
+        rankSearch = rankSearch.Equals(RankBracket.All.ToString(), StringComparison.InvariantCultureIgnoreCase)
+            ? ""
+            : rankSearch;
+
         var query = $$"""
                       {
                          heroStats
@@ -92,7 +93,7 @@ public static class StratzApi
                       }
                       """;
 
-        var responce = await SendStratzGraphQLRequest(client, query);
+        var responce = await SendStratzGraphQLRequest(query);
         var jsonString = await responce.Content.ReadAsStringAsync();
 
         var responseTokens = JObject.Parse(jsonString);
@@ -109,12 +110,18 @@ public static class StratzApi
         return winratesForWeek;
     }
 
-    public static async Task<HttpResponseMessage> SendStratzGraphQLRequest(HttpClient client, string query)
+    public async Task<HttpResponseMessage> SendStratzGraphQLRequest(string query)
     {
         using var request = new HttpRequestMessage(HttpMethod.Post, "https://api.stratz.com/graphql");
         request.Content = JsonContent.Create(new { query });
         request.Headers.Add("Authorization", $"Bearer {Environment.GetEnvironmentVariable("StratzApiKey")}");
-        var response = await client.SendAsync(request);
+        var response = await Client.SendAsync(request);
         return response;
+    }
+
+    public void Dispose()
+    {
+        Client.Dispose();
+        GC.SuppressFinalize(this);
     }
 }

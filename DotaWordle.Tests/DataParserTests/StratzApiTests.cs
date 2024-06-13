@@ -7,18 +7,18 @@ namespace DataParserTests;
 [TestFixture]
 public class StratzApiTests
 {
-    private HttpClient client;
+    private StratzApiParser parser;
 
     [SetUp]
     public void Setup()
     {
-        client = new HttpClient();
+        parser = new StratzApiParser();
     }
 
     [TearDown]
     public void TearDown()
     {
-        client.Dispose();
+        parser.Dispose();
     }
 
     [Test]
@@ -53,7 +53,7 @@ public class StratzApiTests
                              }
                              """;
 
-        var responce = StratzApi.SendStratzGraphQLRequest(client, query).Result;
+        var responce = parser.SendStratzGraphQLRequest(query).Result;
 
         return VerifyJson(responce.Content.ReadAsStringAsync());
     }
@@ -74,7 +74,7 @@ public class StratzApiTests
 
                              """;
 
-        var responce = StratzApi.SendStratzGraphQLRequest(client, query).Result;
+        var responce = parser.SendStratzGraphQLRequest(query).Result;
         return VerifyJson(responce.Content.ReadAsStringAsync());
     }
 
@@ -83,8 +83,8 @@ public class StratzApiTests
     {
         var selectedBrackets = new[] { RankBracket.Herald, RankBracket.Legend, RankBracket.Immortal };
 
-        var selectedBracketsMatches = StratzApi.ParseAllHeroesWeekWinrates(client, selectedBrackets).Result;
-        var allBracketsMatches = StratzApi.ParseAllHeroesWeekWinrates(client, [RankBracket.All]).Result;
+        var selectedBracketsMatches = parser.ParseAllHeroesWeekWinratesAsync(selectedBrackets).Result;
+        var allBracketsMatches = parser.ParseAllHeroesWeekWinratesAsync([RankBracket.All]).Result;
 
         selectedBracketsMatches.Should().HaveCount(3);
         allBracketsMatches.Should().HaveCount(1);

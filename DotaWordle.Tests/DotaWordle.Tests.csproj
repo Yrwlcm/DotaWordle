@@ -30,8 +30,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DotaWordle.DataParser\DotaWordle.DataParser.csproj" />
       <ProjectReference Include="..\DotaWordle.DataAcess.Postgres\DotaWordle.DataAcess.Postgres.csproj" />
+      <ProjectReference Include="..\DotaWordle.DataParser\DotaWordle.DataParser.csproj" />
       <ProjectReference Include="..\DotaWordle\DotaWordle.csproj" />
     </ItemGroup>
 

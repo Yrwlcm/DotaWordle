@@ -1,10 +1,16 @@
 using Dota_Wordle.Logic;
 using DotaWordle.MappingProfiles;
 using DotaWordle.DataAcess.Postgres;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddUserSecrets<Program>();
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+builder.Services.AddDbContext<HeroesDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection"),
+        npgsqlOptionsAction => npgsqlOptionsAction.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)));
 
 builder.Services.AddControllers();
 builder.Services.AddRazorPages();

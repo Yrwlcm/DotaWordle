@@ -1,28 +1,17 @@
-﻿using DotaWordle.DataAcess.Postgres;
-using DotaWordle.DataAcess.Postgres.Enums;
-namespace DataParser;
+using DataParser;
+using DotaWordle.DataAcess.Postgres;
+using Microsoft.EntityFrameworkCore;
 
-public static class Program
-{
-    static async Task Main(string[] args)
-    {
-        //TODO: Переписать на сервис
-        var client = new HttpClient();
+var builder = Host.CreateApplicationBuilder(args);
 
-        var heroesList = await StratzApi.ParseAllHeroes(client);
-        var winrates = await StratzApi.ParseAllHeroesWeekWinrates(client,
-            [RankBracket.Herald, RankBracket.Legend, RankBracket.Immortal]);
-        
-        var flatWinrates = winrates.SelectMany(x => x).ToList();
+builder.Services.AddDbContext<HeroesDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection"),
+        npgsqlOptionsAction => npgsqlOptionsAction.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)));
 
-        using (var db = new HeroesDbContext())
-        {
-            //TODO: Разделить логику парсинга героев и винрейтов
-            db.Heroes.UpdateRange(heroesList);
-            db.HeroWeekWinrates.UpdateRange(flatWinrates);
-            await db.SaveChangesAsync();
-        }
+builder.Services.AddScoped<IHeroesStatisicsParser, StratzApiParser>();
 
-        Console.WriteLine("Done");
-    }
-}
+builder.Services.AddHostedService<HeroesUpdateService>();
+builder.Services.AddHostedService<WinratesUpdateService>();
+
+var host = builder.Build();
+host.Run();
