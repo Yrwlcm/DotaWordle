@@ -15,16 +15,16 @@ public class HeroProfile : Profile
             .AfterMap(FillRoles);
     }
 
-    private static string MapAttribute(PrimaryAttribute attributeId)
+    private static string MapAttribute(HeroPrimaryAttribute attributeId)
     {
-        return attributeId == PrimaryAttribute.All ? "Universal" : attributeId.ToString();
+        return attributeId == HeroPrimaryAttribute.All ? "Universal" : attributeId.ToString();
     }
 
     private static void FillRoles(HeroEntity entity, Hero hero)
     {
         var existingRoles = hero.Roles.Select(role => role.Name).ToHashSet();
         var additionalRoles = Enum
-            .GetNames(typeof(RoleType))
+            .GetNames(typeof(HeroRoleType))
             .Where(role => !existingRoles.Contains(role))
             .Select(role => new Role() { Name = role, Level = 0 })
             .ToList();

@@ -1,6 +1,6 @@
 ﻿namespace DotaWordle.DataAcess.Postgres.Enums;
 
-public enum PrimaryAttribute
+public enum HeroPrimaryAttribute
 {
     Strength,
     Agility,

@@ -26,10 +26,10 @@ public class HeroParametersComparer : IHeroParametersComparer
             ComparedHeroName = comparedHero.Name,
             SameAttackType =
                 string.Equals(hero.AttackType, comparedHero.AttackType, StringComparison.OrdinalIgnoreCase),
-            StartingArmorComparision = hero.StartingArmor.CompareTo(comparedHero.StartingArmor),
-            StartingDamageMinComparision = hero.StartingDamageMin.CompareTo(comparedHero.StartingDamageMin),
-            StartingDamageMaxComparision = hero.StartingDamageMax.CompareTo(comparedHero.StartingDamageMax),
-            StartingMovespeedComparision = hero.StartingMovespeed.CompareTo(comparedHero.StartingMovespeed),
+            ArmorBaseComparision = hero.ArmorBase.CompareTo(comparedHero.ArmorBase),
+            DamageMinBaseComparision = hero.DamageMinBase.CompareTo(comparedHero.DamageMinBase),
+            DamageMaxBaseComparision = hero.DamageMaxBase.CompareTo(comparedHero.DamageMaxBase),
+            MoveSpeedBaseComparision = hero.MoveSpeedBase.CompareTo(comparedHero.MoveSpeedBase),
             AttackRangeComparision = hero.AttackRange.CompareTo(comparedHero.AttackRange),
             StrengthBaseComparision = hero.StrengthBase.CompareTo(comparedHero.StrengthBase),
             AgilityBaseComparision = hero.AgilityBase.CompareTo(comparedHero.AgilityBase),
@@ -50,7 +50,7 @@ public class HeroParametersComparer : IHeroParametersComparer
     {
         var roleComparisons = new List<RoleComparision>();
 
-        foreach (var roleType in Enum.GetValues(typeof(RoleType)))
+        foreach (var roleType in Enum.GetValues(typeof(HeroRoleType)))
         {
             var roleName = roleType.ToString();
             var firstHeroRole = roles.FirstOrDefault(x => x.Name == roleName);

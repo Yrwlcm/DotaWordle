@@ -5,10 +5,10 @@ public record HeroComparison
     public string HeroName { get; set; }
     public string ComparedHeroName { get; set; }
     public bool SameAttackType { get; set; }
-    public int StartingArmorComparision { get; set; }
-    public int StartingDamageMinComparision { get; set; }
-    public int StartingDamageMaxComparision { get; set; }
-    public int StartingMovespeedComparision { get; set; }
+    public int ArmorBaseComparision { get; set; }
+    public int DamageMinBaseComparision { get; set; }
+    public int DamageMaxBaseComparision { get; set; }
+    public int MoveSpeedBaseComparision { get; set; }
     public int AttackRangeComparision { get; set; }
     public int StrengthBaseComparision { get; set; }
     public int AgilityBaseComparision { get; set; }

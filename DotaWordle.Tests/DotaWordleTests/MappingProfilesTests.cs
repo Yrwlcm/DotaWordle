@@ -17,7 +17,7 @@ public class MappingProfilesTests
     ];
 
     private static HeroEntity? heroEntityExample;
-    private static List<RoleEntity>? roleEntitiesExamples;
+    private static List<HeroRoleEntity>? roleEntitiesExamples;
     private static List<HeroWeekWinrateEntity>? winrateEntityExamples;
 
     private static MapperConfiguration mapperConfiguration;
@@ -31,16 +31,16 @@ public class MappingProfilesTests
             new() { HeroId = 1, Matches = 100, Wins = 55, RankBracketId = RankBracket.Herald },
             new() { HeroId = 1, Matches = 100, Wins = 35, RankBracketId = RankBracket.Legend }
         };
-        roleEntitiesExamples = new List<RoleEntity>()
+        roleEntitiesExamples = new List<HeroRoleEntity>()
         {
-            new() { HeroId = 1, RoleTypeId = RoleType.Carry, Level = 3 },
-            new() { HeroId = 1, RoleTypeId = RoleType.Escape, Level = 2 },
+            new() { HeroId = 1, HeroRoleTypeId = HeroRoleType.Carry, Level = 3 },
+            new() { HeroId = 1, HeroRoleTypeId = HeroRoleType.Escape, Level = 2 },
         };
         heroEntityExample = new HeroEntity()
         {
             Id = 1,
             Name = "Anti-mage",
-            PrimaryAttributeId = PrimaryAttribute.Agility,
+            PrimaryAttributeId = HeroPrimaryAttribute.Agility,
             AttackRange = 150,
             AgilityBase = 23,
         };

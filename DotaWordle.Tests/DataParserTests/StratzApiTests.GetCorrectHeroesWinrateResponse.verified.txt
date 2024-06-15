@@ -4,6 +4,626 @@
       winWeek: [
         {
           heroId: 1,
+          winCount: 74641,
+          matchCount: 157133
+        },
+        {
+          heroId: 2,
+          winCount: 177745,
+          matchCount: 336284
+        },
+        {
+          heroId: 3,
+          winCount: 28354,
+          matchCount: 58381
+        },
+        {
+          heroId: 4,
+          winCount: 37859,
+          matchCount: 77791
+        },
+        {
+          heroId: 5,
+          winCount: 105187,
+          matchCount: 208159
+        },
+        {
+          heroId: 6,
+          winCount: 120904,
+          matchCount: 233450
+        },
+        {
+          heroId: 7,
+          winCount: 101587,
+          matchCount: 208255
+        },
+        {
+          heroId: 8,
+          winCount: 176740,
+          matchCount: 345000
+        },
+        {
+          heroId: 9,
+          winCount: 44118,
+          matchCount: 95060
+        },
+        {
+          heroId: 10,
+          winCount: 29450,
+          matchCount: 67446
+        },
+        {
+          heroId: 11,
+          winCount: 195170,
+          matchCount: 393757
+        },
+        {
+          heroId: 12,
+          winCount: 76879,
+          matchCount: 144897
+        },
+        {
+          heroId: 13,
+          winCount: 33975,
+          matchCount: 73692
+        },
+        {
+          heroId: 14,
+          winCount: 297343,
+          matchCount: 564221
+        },
+        {
+          heroId: 15,
+          winCount: 60100,
+          matchCount: 122897
+        },
+        {
+          heroId: 16,
+          winCount: 71631,
+          matchCount: 157713
+        },
+        {
+          heroId: 17,
+          winCount: 104015,
+          matchCount: 208934
+        },
+        {
+          heroId: 18,
+          winCount: 33141,
+          matchCount: 69934
+        },
+        {
+          heroId: 19,
+          winCount: 113527,
+          matchCount: 228418
+        },
+        {
+          heroId: 20,
+          winCount: 122826,
+          matchCount: 235943
+        },
+        {
+          heroId: 21,
+          winCount: 100027,
+          matchCount: 201875
+        },
+        {
+          heroId: 22,
+          winCount: 157841,
+          matchCount: 320158
+        },
+        {
+          heroId: 23,
+          winCount: 29672,
+          matchCount: 65824
+        },
+        {
+          heroId: 25,
+          winCount: 91782,
+          matchCount: 196126
+        },
+        {
+          heroId: 26,
+          winCount: 165603,
+          matchCount: 346746
+        },
+        {
+          heroId: 27,
+          winCount: 139386,
+          matchCount: 267753
+        },
+        {
+          heroId: 28,
+          winCount: 87838,
+          matchCount: 176272
+        },
+        {
+          heroId: 29,
+          winCount: 43838,
+          matchCount: 88811
+        },
+        {
+          heroId: 30,
+          winCount: 170086,
+          matchCount: 323431
+        },
+        {
+          heroId: 31,
+          winCount: 96438,
+          matchCount: 176966
+        },
+        {
+          heroId: 32,
+          winCount: 56677,
+          matchCount: 112078
+        },
+        {
+          heroId: 33,
+          winCount: 39429,
+          matchCount: 76977
+        },
+        {
+          heroId: 34,
+          winCount: 36716,
+          matchCount: 80786
+        },
+        {
+          heroId: 35,
+          winCount: 140434,
+          matchCount: 289618
+        },
+        {
+          heroId: 36,
+          winCount: 100512,
+          matchCount: 192795
+        },
+        {
+          heroId: 37,
+          winCount: 98013,
+          matchCount: 178947
+        },
+        {
+          heroId: 38,
+          winCount: 24299,
+          matchCount: 53699
+        },
+        {
+          heroId: 39,
+          winCount: 63938,
+          matchCount: 136751
+        },
+        {
+          heroId: 40,
+          winCount: 115222,
+          matchCount: 230873
+        },
+        {
+          heroId: 41,
+          winCount: 84752,
+          matchCount: 172246
+        },
+        {
+          heroId: 42,
+          winCount: 146412,
+          matchCount: 266372
+        },
+        {
+          heroId: 43,
+          winCount: 30238,
+          matchCount: 63965
+        },
+        {
+          heroId: 44,
+          winCount: 127846,
+          matchCount: 261451
+        },
+        {
+          heroId: 45,
+          winCount: 38636,
+          matchCount: 84009
+        },
+        {
+          heroId: 46,
+          winCount: 84678,
+          matchCount: 172722
+        },
+        {
+          heroId: 47,
+          winCount: 68733,
+          matchCount: 142522
+        },
+        {
+          heroId: 48,
+          winCount: 56563,
+          matchCount: 117208
+        },
+        {
+          heroId: 49,
+          winCount: 95263,
+          matchCount: 188248
+        },
+        {
+          heroId: 50,
+          winCount: 65454,
+          matchCount: 135775
+        },
+        {
+          heroId: 51,
+          winCount: 65045,
+          matchCount: 125735
+        },
+        {
+          heroId: 52,
+          winCount: 48294,
+          matchCount: 89557
+        },
+        {
+          heroId: 53,
+          winCount: 56425,
+          matchCount: 127233
+        },
+        {
+          heroId: 54,
+          winCount: 121655,
+          matchCount: 230139
+        },
+        {
+          heroId: 55,
+          winCount: 39989,
+          matchCount: 75679
+        },
+        {
+          heroId: 56,
+          winCount: 67751,
+          matchCount: 132974
+        },
+        {
+          heroId: 57,
+          winCount: 21442,
+          matchCount: 45393
+        },
+        {
+          heroId: 58,
+          winCount: 37321,
+          matchCount: 77603
+        },
+        {
+          heroId: 59,
+          winCount: 44119,
+          matchCount: 88826
+        },
+        {
+          heroId: 60,
+          winCount: 72409,
+          matchCount: 135336
+        },
+        {
+          heroId: 61,
+          winCount: 22364,
+          matchCount: 46735
+        },
+        {
+          heroId: 62,
+          winCount: 85888,
+          matchCount: 167316
+        },
+        {
+          heroId: 63,
+          winCount: 122535,
+          matchCount: 236914
+        },
+        {
+          heroId: 64,
+          winCount: 119691,
+          matchCount: 238430
+        },
+        {
+          heroId: 65,
+          winCount: 13273,
+          matchCount: 31970
+        },
+        {
+          heroId: 66,
+          winCount: 5687,
+          matchCount: 13379
+        },
+        {
+          heroId: 67,
+          winCount: 50119,
+          matchCount: 103980
+        },
+        {
+          heroId: 68,
+          winCount: 72303,
+          matchCount: 140849
+        },
+        {
+          heroId: 69,
+          winCount: 31331,
+          matchCount: 65892
+        },
+        {
+          heroId: 70,
+          winCount: 97720,
+          matchCount: 193792
+        },
+        {
+          heroId: 71,
+          winCount: 149066,
+          matchCount: 290597
+        },
+        {
+          heroId: 72,
+          winCount: 48238,
+          matchCount: 101964
+        },
+        {
+          heroId: 73,
+          winCount: 32686,
+          matchCount: 65264
+        },
+        {
+          heroId: 74,
+          winCount: 110506,
+          matchCount: 241359
+        },
+        {
+          heroId: 75,
+          winCount: 121749,
+          matchCount: 220917
+        },
+        {
+          heroId: 76,
+          winCount: 57854,
+          matchCount: 110742
+        },
+        {
+          heroId: 77,
+          winCount: 27703,
+          matchCount: 55779
+        },
+        {
+          heroId: 78,
+          winCount: 12427,
+          matchCount: 24671
+        },
+        {
+          heroId: 79,
+          winCount: 24160,
+          matchCount: 51320
+        },
+        {
+          heroId: 80,
+          winCount: 13871,
+          matchCount: 29137
+        },
+        {
+          heroId: 81,
+          winCount: 80364,
+          matchCount: 152660
+        },
+        {
+          heroId: 82,
+          winCount: 20883,
+          matchCount: 44564
+        },
+        {
+          heroId: 83,
+          winCount: 39611,
+          matchCount: 78005
+        },
+        {
+          heroId: 84,
+          winCount: 148472,
+          matchCount: 285905
+        },
+        {
+          heroId: 85,
+          winCount: 68229,
+          matchCount: 130355
+        },
+        {
+          heroId: 86,
+          winCount: 145137,
+          matchCount: 298049
+        },
+        {
+          heroId: 87,
+          winCount: 66416,
+          matchCount: 134489
+        },
+        {
+          heroId: 88,
+          winCount: 69814,
+          matchCount: 143407
+        },
+        {
+          heroId: 89,
+          winCount: 16099,
+          matchCount: 32738
+        },
+        {
+          heroId: 90,
+          winCount: 24990,
+          matchCount: 54988
+        },
+        {
+          heroId: 91,
+          winCount: 42487,
+          matchCount: 85945
+        },
+        {
+          heroId: 92,
+          winCount: 16466,
+          matchCount: 32883
+        },
+        {
+          heroId: 93,
+          winCount: 79623,
+          matchCount: 165175
+        },
+        {
+          heroId: 94,
+          winCount: 35165,
+          matchCount: 66854
+        },
+        {
+          heroId: 95,
+          winCount: 57076,
+          matchCount: 107255
+        },
+        {
+          heroId: 96,
+          winCount: 98030,
+          matchCount: 186442
+        },
+        {
+          heroId: 97,
+          winCount: 52969,
+          matchCount: 119714
+        },
+        {
+          heroId: 98,
+          winCount: 61363,
+          matchCount: 126146
+        },
+        {
+          heroId: 99,
+          winCount: 62329,
+          matchCount: 121984
+        },
+        {
+          heroId: 100,
+          winCount: 34690,
+          matchCount: 78092
+        },
+        {
+          heroId: 101,
+          winCount: 79871,
+          matchCount: 154291
+        },
+        {
+          heroId: 102,
+          winCount: 60127,
+          matchCount: 110217
+        },
+        {
+          heroId: 103,
+          winCount: 14666,
+          matchCount: 28888
+        },
+        {
+          heroId: 104,
+          winCount: 133551,
+          matchCount: 263324
+        },
+        {
+          heroId: 105,
+          winCount: 74610,
+          matchCount: 166772
+        },
+        {
+          heroId: 106,
+          winCount: 54320,
+          matchCount: 110161
+        },
+        {
+          heroId: 107,
+          winCount: 23505,
+          matchCount: 50966
+        },
+        {
+          heroId: 108,
+          winCount: 49475,
+          matchCount: 92166
+        },
+        {
+          heroId: 109,
+          winCount: 25943,
+          matchCount: 59546
+        },
+        {
+          heroId: 110,
+          winCount: 66502,
+          matchCount: 133316
+        },
+        {
+          heroId: 111,
+          winCount: 47459,
+          matchCount: 90573
+        },
+        {
+          heroId: 112,
+          winCount: 44803,
+          matchCount: 87679
+        },
+        {
+          heroId: 113,
+          winCount: 31701,
+          matchCount: 61649
+        },
+        {
+          heroId: 114,
+          winCount: 76358,
+          matchCount: 162876
+        },
+        {
+          heroId: 119,
+          winCount: 89771,
+          matchCount: 176178
+        },
+        {
+          heroId: 120,
+          winCount: 21337,
+          matchCount: 48344
+        },
+        {
+          heroId: 121,
+          winCount: 43590,
+          matchCount: 89830
+        },
+        {
+          heroId: 123,
+          winCount: 107890,
+          matchCount: 222347
+        },
+        {
+          heroId: 126,
+          winCount: 54811,
+          matchCount: 108969
+        },
+        {
+          heroId: 128,
+          winCount: 44516,
+          matchCount: 96576
+        },
+        {
+          heroId: 129,
+          winCount: 54095,
+          matchCount: 113168
+        },
+        {
+          heroId: 135,
+          winCount: 34405,
+          matchCount: 69748
+        },
+        {
+          heroId: 136,
+          winCount: 47272,
+          matchCount: 97922
+        },
+        {
+          heroId: 137,
+          winCount: 33555,
+          matchCount: 67933
+        },
+        {
+          heroId: 138,
+          winCount: 33149,
+          matchCount: 68330
+        },
+        {
+          heroId: 1,
           winCount: 80226,
           matchCount: 169309
         },
@@ -4341,626 +4961,6 @@
           heroId: 138,
           winCount: 39881,
           matchCount: 81403
-        },
-        {
-          heroId: 1,
-          winCount: 95463,
-          matchCount: 182633
-        },
-        {
-          heroId: 2,
-          winCount: 116870,
-          matchCount: 218595
-        },
-        {
-          heroId: 3,
-          winCount: 30979,
-          matchCount: 60799
-        },
-        {
-          heroId: 4,
-          winCount: 39370,
-          matchCount: 76491
-        },
-        {
-          heroId: 5,
-          winCount: 80491,
-          matchCount: 162988
-        },
-        {
-          heroId: 6,
-          winCount: 124364,
-          matchCount: 232489
-        },
-        {
-          heroId: 7,
-          winCount: 81864,
-          matchCount: 164525
-        },
-        {
-          heroId: 8,
-          winCount: 91329,
-          matchCount: 183996
-        },
-        {
-          heroId: 9,
-          winCount: 37203,
-          matchCount: 76882
-        },
-        {
-          heroId: 10,
-          winCount: 60814,
-          matchCount: 127503
-        },
-        {
-          heroId: 11,
-          winCount: 88242,
-          matchCount: 182627
-        },
-        {
-          heroId: 12,
-          winCount: 44203,
-          matchCount: 86076
-        },
-        {
-          heroId: 13,
-          winCount: 48925,
-          matchCount: 103521
-        },
-        {
-          heroId: 14,
-          winCount: 205195,
-          matchCount: 402313
-        },
-        {
-          heroId: 15,
-          winCount: 80217,
-          matchCount: 162114
-        },
-        {
-          heroId: 16,
-          winCount: 46015,
-          matchCount: 84161
-        },
-        {
-          heroId: 17,
-          winCount: 39306,
-          matchCount: 81725
-        },
-        {
-          heroId: 18,
-          winCount: 28881,
-          matchCount: 61908
-        },
-        {
-          heroId: 19,
-          winCount: 47215,
-          matchCount: 99837
-        },
-        {
-          heroId: 20,
-          winCount: 59111,
-          matchCount: 114451
-        },
-        {
-          heroId: 21,
-          winCount: 77078,
-          matchCount: 163508
-        },
-        {
-          heroId: 22,
-          winCount: 125333,
-          matchCount: 239196
-        },
-        {
-          heroId: 23,
-          winCount: 54761,
-          matchCount: 106525
-        },
-        {
-          heroId: 25,
-          winCount: 70179,
-          matchCount: 152406
-        },
-        {
-          heroId: 26,
-          winCount: 127133,
-          matchCount: 271176
-        },
-        {
-          heroId: 27,
-          winCount: 101667,
-          matchCount: 192916
-        },
-        {
-          heroId: 28,
-          winCount: 82749,
-          matchCount: 156490
-        },
-        {
-          heroId: 29,
-          winCount: 30593,
-          matchCount: 61175
-        },
-        {
-          heroId: 30,
-          winCount: 117216,
-          matchCount: 221369
-        },
-        {
-          heroId: 31,
-          winCount: 55418,
-          matchCount: 107497
-        },
-        {
-          heroId: 32,
-          winCount: 43137,
-          matchCount: 83687
-        },
-        {
-          heroId: 33,
-          winCount: 25884,
-          matchCount: 53809
-        },
-        {
-          heroId: 34,
-          winCount: 27145,
-          matchCount: 57986
-        },
-        {
-          heroId: 35,
-          winCount: 146057,
-          matchCount: 291328
-        },
-        {
-          heroId: 36,
-          winCount: 67790,
-          matchCount: 129108
-        },
-        {
-          heroId: 37,
-          winCount: 42830,
-          matchCount: 82280
-        },
-        {
-          heroId: 38,
-          winCount: 7359,
-          matchCount: 15959
-        },
-        {
-          heroId: 39,
-          winCount: 43120,
-          matchCount: 91465
-        },
-        {
-          heroId: 40,
-          winCount: 65774,
-          matchCount: 125958
-        },
-        {
-          heroId: 41,
-          winCount: 79385,
-          matchCount: 166619
-        },
-        {
-          heroId: 42,
-          winCount: 61271,
-          matchCount: 116080
-        },
-        {
-          heroId: 43,
-          winCount: 26635,
-          matchCount: 51777
-        },
-        {
-          heroId: 44,
-          winCount: 119149,
-          matchCount: 242507
-        },
-        {
-          heroId: 45,
-          winCount: 36727,
-          matchCount: 76739
-        },
-        {
-          heroId: 46,
-          winCount: 30758,
-          matchCount: 67554
-        },
-        {
-          heroId: 47,
-          winCount: 74295,
-          matchCount: 143780
-        },
-        {
-          heroId: 48,
-          winCount: 77277,
-          matchCount: 156760
-        },
-        {
-          heroId: 49,
-          winCount: 45523,
-          matchCount: 93312
-        },
-        {
-          heroId: 50,
-          winCount: 54934,
-          matchCount: 106508
-        },
-        {
-          heroId: 51,
-          winCount: 26332,
-          matchCount: 52154
-        },
-        {
-          heroId: 52,
-          winCount: 50492,
-          matchCount: 92076
-        },
-        {
-          heroId: 53,
-          winCount: 74875,
-          matchCount: 157957
-        },
-        {
-          heroId: 54,
-          winCount: 105348,
-          matchCount: 198288
-        },
-        {
-          heroId: 55,
-          winCount: 18929,
-          matchCount: 35695
-        },
-        {
-          heroId: 56,
-          winCount: 55581,
-          matchCount: 107394
-        },
-        {
-          heroId: 57,
-          winCount: 38471,
-          matchCount: 77746
-        },
-        {
-          heroId: 58,
-          winCount: 19853,
-          matchCount: 42602
-        },
-        {
-          heroId: 59,
-          winCount: 44583,
-          matchCount: 89079
-        },
-        {
-          heroId: 60,
-          winCount: 27810,
-          matchCount: 54335
-        },
-        {
-          heroId: 61,
-          winCount: 11225,
-          matchCount: 24871
-        },
-        {
-          heroId: 62,
-          winCount: 77794,
-          matchCount: 155906
-        },
-        {
-          heroId: 63,
-          winCount: 48531,
-          matchCount: 101031
-        },
-        {
-          heroId: 64,
-          winCount: 76723,
-          matchCount: 148476
-        },
-        {
-          heroId: 65,
-          winCount: 10597,
-          matchCount: 24398
-        },
-        {
-          heroId: 66,
-          winCount: 6243,
-          matchCount: 13696
-        },
-        {
-          heroId: 67,
-          winCount: 53157,
-          matchCount: 102642
-        },
-        {
-          heroId: 68,
-          winCount: 48711,
-          matchCount: 95979
-        },
-        {
-          heroId: 69,
-          winCount: 28262,
-          matchCount: 58780
-        },
-        {
-          heroId: 70,
-          winCount: 51151,
-          matchCount: 103788
-        },
-        {
-          heroId: 71,
-          winCount: 100173,
-          matchCount: 201711
-        },
-        {
-          heroId: 72,
-          winCount: 42420,
-          matchCount: 89777
-        },
-        {
-          heroId: 73,
-          winCount: 22533,
-          matchCount: 46320
-        },
-        {
-          heroId: 74,
-          winCount: 106426,
-          matchCount: 224107
-        },
-        {
-          heroId: 75,
-          winCount: 64676,
-          matchCount: 124010
-        },
-        {
-          heroId: 76,
-          winCount: 43307,
-          matchCount: 85711
-        },
-        {
-          heroId: 77,
-          winCount: 8313,
-          matchCount: 17000
-        },
-        {
-          heroId: 78,
-          winCount: 12375,
-          matchCount: 24881
-        },
-        {
-          heroId: 79,
-          winCount: 20699,
-          matchCount: 43135
-        },
-        {
-          heroId: 80,
-          winCount: 10871,
-          matchCount: 22780
-        },
-        {
-          heroId: 81,
-          winCount: 29600,
-          matchCount: 59874
-        },
-        {
-          heroId: 82,
-          winCount: 21897,
-          matchCount: 43099
-        },
-        {
-          heroId: 83,
-          winCount: 25628,
-          matchCount: 50131
-        },
-        {
-          heroId: 84,
-          winCount: 104260,
-          matchCount: 199945
-        },
-        {
-          heroId: 85,
-          winCount: 45025,
-          matchCount: 87794
-        },
-        {
-          heroId: 86,
-          winCount: 97782,
-          matchCount: 216679
-        },
-        {
-          heroId: 87,
-          winCount: 86370,
-          matchCount: 163483
-        },
-        {
-          heroId: 88,
-          winCount: 53207,
-          matchCount: 104384
-        },
-        {
-          heroId: 89,
-          winCount: 17126,
-          matchCount: 34356
-        },
-        {
-          heroId: 90,
-          winCount: 19679,
-          matchCount: 42346
-        },
-        {
-          heroId: 91,
-          winCount: 35347,
-          matchCount: 68931
-        },
-        {
-          heroId: 92,
-          winCount: 8932,
-          matchCount: 18239
-        },
-        {
-          heroId: 93,
-          winCount: 71348,
-          matchCount: 146570
-        },
-        {
-          heroId: 94,
-          winCount: 34322,
-          matchCount: 65311
-        },
-        {
-          heroId: 95,
-          winCount: 50908,
-          matchCount: 96544
-        },
-        {
-          heroId: 96,
-          winCount: 50549,
-          matchCount: 96610
-        },
-        {
-          heroId: 97,
-          winCount: 69641,
-          matchCount: 149040
-        },
-        {
-          heroId: 98,
-          winCount: 51944,
-          matchCount: 103063
-        },
-        {
-          heroId: 99,
-          winCount: 71448,
-          matchCount: 131239
-        },
-        {
-          heroId: 100,
-          winCount: 33795,
-          matchCount: 72678
-        },
-        {
-          heroId: 101,
-          winCount: 48387,
-          matchCount: 96647
-        },
-        {
-          heroId: 102,
-          winCount: 50964,
-          matchCount: 91927
-        },
-        {
-          heroId: 103,
-          winCount: 10177,
-          matchCount: 20267
-        },
-        {
-          heroId: 104,
-          winCount: 80215,
-          matchCount: 163069
-        },
-        {
-          heroId: 105,
-          winCount: 60103,
-          matchCount: 124864
-        },
-        {
-          heroId: 106,
-          winCount: 27445,
-          matchCount: 58844
-        },
-        {
-          heroId: 107,
-          winCount: 22290,
-          matchCount: 46720
-        },
-        {
-          heroId: 108,
-          winCount: 19296,
-          matchCount: 37433
-        },
-        {
-          heroId: 109,
-          winCount: 14345,
-          matchCount: 32250
-        },
-        {
-          heroId: 110,
-          winCount: 20189,
-          matchCount: 42059
-        },
-        {
-          heroId: 111,
-          winCount: 34093,
-          matchCount: 64519
-        },
-        {
-          heroId: 112,
-          winCount: 27407,
-          matchCount: 53512
-        },
-        {
-          heroId: 113,
-          winCount: 35990,
-          matchCount: 70117
-        },
-        {
-          heroId: 114,
-          winCount: 51427,
-          matchCount: 112462
-        },
-        {
-          heroId: 119,
-          winCount: 39020,
-          matchCount: 79925
-        },
-        {
-          heroId: 120,
-          winCount: 24667,
-          matchCount: 54574
-        },
-        {
-          heroId: 121,
-          winCount: 41645,
-          matchCount: 84065
-        },
-        {
-          heroId: 123,
-          winCount: 91512,
-          matchCount: 184719
-        },
-        {
-          heroId: 126,
-          winCount: 25796,
-          matchCount: 53262
-        },
-        {
-          heroId: 128,
-          winCount: 31083,
-          matchCount: 68307
-        },
-        {
-          heroId: 129,
-          winCount: 46992,
-          matchCount: 100762
-        },
-        {
-          heroId: 135,
-          winCount: 24103,
-          matchCount: 48875
-        },
-        {
-          heroId: 136,
-          winCount: 39131,
-          matchCount: 78934
-        },
-        {
-          heroId: 137,
-          winCount: 28594,
-          matchCount: 59263
-        },
-        {
-          heroId: 138,
-          winCount: 27302,
-          matchCount: 56225
         }
       ]
     }

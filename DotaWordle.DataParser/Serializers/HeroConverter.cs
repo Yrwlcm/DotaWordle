@@ -7,12 +7,12 @@ namespace DataParser.Serializers;
 
 public class HeroConverter : JsonConverter<HeroEntity>
 {
-    private readonly Dictionary<string, PrimaryAttribute> attributesAbbreviations = new()
+    private readonly Dictionary<string, HeroPrimaryAttribute> attributesAbbreviations = new()
     {
-        { "str", PrimaryAttribute.Strength },
-        { "agi", PrimaryAttribute.Agility },
-        { "int", PrimaryAttribute.Intelligence },
-        { "all", PrimaryAttribute.All },
+        { "str", HeroPrimaryAttribute.Strength },
+        { "agi", HeroPrimaryAttribute.Agility },
+        { "int", HeroPrimaryAttribute.Intelligence },
+        { "all", HeroPrimaryAttribute.All },
     };
 
     public override void WriteJson(JsonWriter writer, HeroEntity? value, JsonSerializer serializer)
@@ -32,12 +32,12 @@ public class HeroConverter : JsonConverter<HeroEntity>
             Id = jobject.Value<int>("id"),
             Name = jobject.Value<string>("displayName"),
             GameVersion = jobject.Value<int>("gameVersionId"),
-            Roles = jobject["roles"].ToObject<List<RoleEntity>>(serializer),
+            Roles = jobject["roles"].ToObject<List<HeroRoleEntity>>(serializer),
             AttackType = heroStats.Value<string>("attackType"),
-            StartingArmor = heroStats.Value<float>("startingArmor"),
-            StartingDamageMin = heroStats.Value<float>("startingDamageMin"),
-            StartingDamageMax = heroStats.Value<float>("startingDamageMax"),
-            StartingMovespeed = heroStats.Value<float>("moveSpeed"),
+            ArmorBase = heroStats.Value<float>("startingArmor"),
+            DamageMinBase = heroStats.Value<float>("startingDamageMin"),
+            DamageMaxBase = heroStats.Value<float>("startingDamageMax"),
+            MoveSpeedBase = heroStats.Value<float>("moveSpeed"),
             AttackRange = heroStats.Value<float>("attackRange"),
             PrimaryAttributeId = attributesAbbreviations[heroStats.Value<string>("primaryAttribute")],
             StrengthBase = heroStats.Value<float>("strengthBase"),
@@ -48,11 +48,11 @@ public class HeroConverter : JsonConverter<HeroEntity>
 
         heroEnitiy.Roles = heroEnitiy.Roles.Select(role => role with { HeroId = heroEnitiy.Id }).ToList();
 
-        if (heroEnitiy.PrimaryAttributeId == PrimaryAttribute.All)
+        if (heroEnitiy.PrimaryAttributeId == HeroPrimaryAttribute.All)
         {
             var allAttributesSum = heroEnitiy.StrengthBase + heroEnitiy.AgilityBase + heroEnitiy.IntelligenceBase;
-            heroEnitiy.StartingDamageMin = float.Round(heroEnitiy.StartingDamageMin + allAttributesSum * 0.7f );
-            heroEnitiy.StartingDamageMax = float.Round(heroEnitiy.StartingDamageMax + allAttributesSum * 0.7f );
+            heroEnitiy.DamageMinBase = float.Round(heroEnitiy.DamageMinBase + allAttributesSum * 0.7f );
+            heroEnitiy.DamageMaxBase = float.Round(heroEnitiy.DamageMaxBase + allAttributesSum * 0.7f );
         }
         
         return heroEnitiy;

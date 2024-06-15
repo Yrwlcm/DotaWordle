@@ -38,19 +38,19 @@
                         <li class="list-group-item">
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
-                            <img id="attackDamageMinStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-right: 8px;"><span >${heroData.startingDamageMin}</span>
-                             - <span>${heroData.startingDamageMax}</span><img id="attackDamageMaxStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
+                            <img id="attackDamageMinStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-right: 8px;"><span >${heroData.damageMinBase}</span>
+                             - <span>${heroData.damageMaxBase}</span><img id="attackDamageMaxStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item">
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
-                            ${Math.round(heroData.startingArmor * 10) / 10}
+                            ${Math.round(heroData.armorBase * 10) / 10}
                             <img id="armorStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item">
                             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png"
                              style="width: 30px; height: 30px; margin-right: 5px;"/>
-                            ${heroData.startingMovespeed}
+                            ${heroData.moveSpeedBase}
                             <img id="movespeedStatus" src="Images/ComparingSymbols/cross.png" style="width: 15px; height: 15px; margin-left: 8px;">
                         </li>
                         <li class="list-group-item" >

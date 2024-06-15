@@ -8,7 +8,7 @@ public class RoleProfile : Profile
 {
     public RoleProfile()
     {
-        CreateMap<RoleEntity, Role>()
-            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.RoleTypeId.ToString()));
+        CreateMap<HeroRoleEntity, Role>()
+            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.HeroRoleTypeId.ToString()));
     }
 }
